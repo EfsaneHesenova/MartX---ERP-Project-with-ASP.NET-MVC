@@ -1,0 +1,133 @@
+﻿@model ProductPostDto;
+<div class="main-content">
+
+    <div class="page-content">
+        <div class="container-fluid">
+
+            <!-- start page title -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                        <h4 class="mb-sm-0 font-size-18">Basic Elements</h4>
+
+                        <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
+                                <li class="breadcrumb-item active">Basic Elements</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end page title -->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Textual inputs</h4>
+                            <p class="card-title-desc">
+                                Here are examples of <code>.form-control</code> applied to each
+                                textual HTML5 <code>&lt;input&gt;</code> <code>type</code>.
+                            </p>
+                        </div>
+                        <div class="card-body p-4">
+
+                            <div class="row">
+                                <form method="post" enctype="multipart/form-data">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label asp-for="Title" class="form-label">Title</label>
+                                            <input asp-for="Title" class="form-control" type="text" id="title-input">
+                                            <span asp-validation-for="Title" style="color: mediumpurple"></span>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label asp-for="Description" class="form-label">Description</label>
+                                            <input asp-for="Description" class="form-control" type="text" id="title-input">
+                                            <span asp-validation-for="Description" style="color: mediumpurple"></span>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label asp-for="RealPrice" class="form-label">RealPrice</label>
+                                            <input asp-for="RealPrice" class="form-control" type="text" id="title-input">
+                                            <span asp-validation-for="RealPrice" style="color: mediumpurple"></span>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label asp-for="SalePercent" class="form-label">SalePercent</label>
+                                            <input asp-for="SalePercent" class="form-control" type="text" id="title-input">
+                                            <span asp-validation-for="SalePercent" style="color: mediumpurple"></span>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label asp-for="SalePrice" class="form-label">SalePrice</label>
+                                            <input asp-for="SalePrice" class="form-control" type="text" id="title-input">
+                                            <span asp-validation-for="SalePrice" style="color: mediumpurple"></span>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label asp-for="Size" class="form-label">Size</label>
+                                            <input asp-for="Size" class="form-control" type="text" id="title-input">
+                                            <span asp-validation-for="Size" style="color: mediumpurple"></span>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label asp-for="StockQuantity" class="form-label">StockQuantity</label>
+                                            <input asp-for="StockQuantity" class="form-control" type="text" id="title-input">
+                                            <span asp-validation-for="StockQuantity" style="color: mediumpurple"></span>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label asp-for="Image" for="file-upload" class="form-label">Upload File</label>
+                                            <input asp-for="Image" class="form-control" type="file" id="file-upload" multiple>
+                                            <span asp-validation-for="Image" style="color: mediumpurple"></span>
+
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <label asp-for="BrandId" class="form-label">Select</label>
+                                            <select asp-for="BrandId" class="form-select">
+                                                <option>Select</option>
+                                                @foreach (var item in Model.Brands)
+                                                {
+                                                    <option value="@item.Value">@item.Text</option>
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <label asp-for="CategoryId" class="form-label">Select</label>
+                                            <select asp-for="CategoryId" class="form-select">
+                                                <option>Select</option>
+                                                @foreach (var item in Model.Categories)
+                                                {
+                                                    <option value="@item.Value">@item.Text</option>
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="d-grid gap-2 mt-5">
+                                        <button type="submit" class="btn btn-success btn-lg waves-effect waves-light">Create</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div> <!-- container-fluid -->
+    </div>
+    <!-- End Page-content -->
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <script>document.write(new Date().getFullYear())</script> © Minia.
+                </div>
+                <div class="col-sm-6">
+                    <div class="text-sm-end d-none d-sm-block">
+                        Design & Develop by <a href="#!" class="text-decoration-underline">Themesbrand</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- end main content-->

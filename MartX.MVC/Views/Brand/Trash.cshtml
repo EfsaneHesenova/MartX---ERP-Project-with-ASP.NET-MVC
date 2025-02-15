@@ -1,0 +1,125 @@
+﻿@model ICollection<BrandGetDto>
+@{
+    int Number = 0;
+}
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <!-- start page title -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                        <h4 class="mb-sm-0 font-size-18">Control Panel - Create Form</h4>
+                        <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a href="javascript: void(0);">Control Panel</a></li>
+                                <li class="breadcrumb-item active">Brand - Trash</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end page title -->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h2 class="fw-bold">Brand - Trash</h2>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a asp-controller="Brand"
+                                       asp-action="Index"
+                                       class="btn btn-lg btn-dark btn-rounded waves-effect waves-light float-end">
+                                        Go Back
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-rep-plugin">
+                                <div class="table-responsive mb-0" data-pattern="priority-columns">
+                                    <table id="tech-companies-1" class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Id</th>
+                                                <th data-priority="1">Title</th>
+                                                <th data-priority="3">Description</th>
+                                                <th data-priority="1">Image</th>
+                                                <th data-priority="1">Deleted Date</th>
+                                                <th class="text-end" scope="col">Options</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model)
+                                            {
+                                                Number++;
+                                                <tr>
+                                                    <th><p class="mt-2">@Number</p> </th>
+                                                    <td><p class="mt-2">@item.Title</p></td>
+                                                    <td><p class="mt-2">@item.Description</p></td>
+                                                    <td><p class="mt-2">@item.DeletedAt</p></td>
+                                                    <td>
+                                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#imageModal-@item.Id">
+                                                            <button class="btn btn-dark btn-rounded waves-effect waves-light mt-1" disabled>
+                                                                <i class="fa-solid fa-image"></i>
+                                                            </button>
+                                                        </a>
+
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="imageModal-@item.Id" tabindex="-1" aria-labelledby="imageModalLabel-@item.Id" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="imageModalLabel-@item.Id">@item.Title</h5>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body text-center">
+                                                                        <img src="~/Uploads/@item.ImageUrl" class="img-fluid" alt="@item.Title" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <a asp-controller="Brand" asp-action="Restore" asp-route-id="@item.Id" class="btn btn-secondary btn-rounded waves-effect waves-light mt-1 ms-2">
+                                                            <i class="fa-solid fa-rotate-left"></i>
+                                                        </a>
+                                                        <a asp-controller="Brand" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-rounded waves-effect waves-light mt-1 ms-2">
+                                                            <i class="fa-solid fa-delete-left"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                </div> <!-- end col -->
+            </div> <!-- end row -->
+        </div> <!-- container-fluid -->
+    </div>
+    <!-- End Page-content -->
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <script>document.write(new Date().getFullYear())</script> © MartX.
+                </div>
+                <div class="col-sm-6">
+                    <div class="text-sm-end d-none d-sm-block">
+                        Design & Develop by <a href="#!" class="text-decoration-underline">Themesbrand</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
