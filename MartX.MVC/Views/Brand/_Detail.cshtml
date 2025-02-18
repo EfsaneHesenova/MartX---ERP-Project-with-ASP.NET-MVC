@@ -1,0 +1,23 @@
+﻿@model BrandGetDto
+
+<div class="modal-header">
+    <h5 class="modal-title">@Model.Title</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    <img src="~/uploads/@Model.ImageUrl" class="img-fluid mb-3" alt="@Model.Title">
+    <p><strong>Description:</strong> @Model.Description</p>
+    <p><strong>Deleted:</strong> @Model.IsDeleted</p>
+    <p><strong>Created At:</strong> @Model.CreatedAt</p>
+    @if (Model.UpdatedAt != DateTime.Parse("1.01.0001 00:00:00"))
+    {
+        <p><strong>Updated At:</strong> @Model.UpdatedAt</p>
+    }
+    @if (Model.DeletedAt != DateTime.Parse("1.01.0001 00:00:00"))
+    {
+        <p><strong>Deleted At:</strong> @Model.DeletedAt</p>
+    }
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>

@@ -14,5 +14,5 @@ public class DocumentImageUrlPostDto
     public string Title { get; set; }
     public IFormFile Image { get; set; }
     public Guid EmployeeId { get; set; }
-    public ICollection<SelectListItem>? Employees { get; set; }
+    public Employee? Employee { get; set; }
 }

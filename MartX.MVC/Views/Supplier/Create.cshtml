@@ -1,5 +1,4 @@
 ﻿@model SupplierPostDto;
-
 <div class="main-content">
 
     <div class="page-content">
@@ -9,12 +8,12 @@
             <div class="row">
                 <div class="col-12">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0 font-size-18">Basic Elements</h4>
+                        <h4 class="mb-sm-0 font-size-18">Control Panel - Create Form</h4>
 
                         <div class="page-title-right">
                             <ol class="breadcrumb m-0">
-                                <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
-                                <li class="breadcrumb-item active">Basic Elements</li>
+                                <li class="breadcrumb-item"><a href="javascript: void(0);">Supplier</a></li>
+                                <li class="breadcrumb-item active">Create</li>
                             </ol>
                         </div>
                     </div>
@@ -26,11 +25,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Textual inputs</h4>
-                            <p class="card-title-desc">
-                                Here are examples of <code>.form-control</code> applied to each
-                                textual HTML5 <code>&lt;input&gt;</code> <code>type</code>.
-                            </p>
+                            <h2 class="card-title">Create Supplier</h2>
                         </div>
                         <div class="card-body p-4">
 
@@ -63,7 +58,7 @@
                                             <label asp-for="Address" class="form-label">Address</label>
                                             <input asp-for="Address" class="form-control" type="text" id="title-input">
                                             <span asp-validation-for="Address" style="color: mediumpurple"></span>
-                                        </div>                                     
+                                        </div>            
                                     </div>
                                     <div class="d-grid gap-2 mt-5">
                                         <button type="submit" class="btn btn-success btn-lg waves-effect waves-light">Create</button>

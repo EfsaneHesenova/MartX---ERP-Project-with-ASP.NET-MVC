@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using MartX.BL.DTOs.BrandDtos;
 using MartX.BL.DTOs.CategoryDtos;
 using MartX.BL.Services.Abstractions;
 using MartX.BL.Services.Implementations;
@@ -122,7 +123,7 @@ namespace MartX.MVC.Controllers
             try
             {
                 await _categoryService.RestoreCategoryAsync(id);
-                return RedirectToAction("Index");
+                return RedirectToAction("Trash");
             }
             catch (Exception ex)
             {
@@ -142,6 +143,21 @@ namespace MartX.MVC.Controllers
             {
                 return BadRequest(ex.Message);
             }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Trash()
+        {
+            try
+            {
+                ICollection<CategoryGetDto> categories = await _categoryService.GetAllSoftDeletedCategory();
+                return View(categories);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
         }
     }
 }

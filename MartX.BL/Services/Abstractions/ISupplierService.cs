@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MartX.BL.DTOs.BrandDtos;
 using MartX.BL.DTOs.SupplierDtos;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -15,6 +16,7 @@ public interface ISupplierService
     Task SoftDeleteSupplierAsync(Guid id);
     Task RestoreSupplierAsync(Guid id);
     Task UpdateSupplierAsync(SupplierPutDto supplierPutDto);
+    Task<ICollection<SupplierGetDto>> GetAllSoftDeletedSupplier();
     Task<ICollection<SupplierGetDto>> GetAllSupplierAsync();
     Task<SupplierGetDto> GetByIdSupplierAsync(Guid id);
     Task<ICollection<SelectListItem>> SelectAllSupplier();

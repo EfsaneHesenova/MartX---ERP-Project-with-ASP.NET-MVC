@@ -17,165 +17,165 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MartX.MVC
 build_property.RootNamespace = MartX.MVC
-build_property.ProjectDir = C:\Users\hesen\source\repos\MartXApplication\MartX.MVC\
+build_property.ProjectDir = C:\Users\hesen\Desktop\MartxApp\MartXApplication\MartX.MVC\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\hesen\source\repos\MartXApplication\MartX.MVC
+build_property.MSBuildProjectDirectory = C:\Users\hesen\Desktop\MartxApp\MartXApplication\MartX.MVC
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Account/Login.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Account/Register.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Brand/Create.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Brand/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Brand/Detail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcRGV0YWlsLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Brand/Index.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Brand/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Brand/Trash.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Brand/Trash.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcVHJhc2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Brand/Update.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Brand/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Category/Create.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Brand/_Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcX0RldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Category/Detail.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Category/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Category/Index.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Category/Trash.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Category/Trash.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcVHJhc2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Category/Update.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Category/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Department/Create.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Department/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Department/Detail.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Department/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Department/Index.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Department/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Department/Trash.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Department/Trash.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxUcmFzaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Department/Update.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Department/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/DocumentImageUrl/Create.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/DocumentImageUrl/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRJbWFnZVVybFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/DocumentImageUrl/Update.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/DocumentImageUrl/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRJbWFnZVVybFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Employee/Create.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Employee/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Employee/Detail.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Employee/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Employee/Index.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Employee/Trash.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Employee/Trash.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcVHJhc2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Employee/Update.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Employee/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Home/Index.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Product/Create.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Product/Detail.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Product/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Product/Index.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Product/Trash.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Product/Trash.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxUcmFzaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Product/Update.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Product/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Shared/_Layout.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Supplier/Create.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Supplier/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Supplier/Detail.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Supplier/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Supplier/Index.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Supplier/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Supplier/Trash.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Supplier/Trash.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcVHJhc2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/Supplier/Update.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/Supplier/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/_ViewImports.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hesen/source/repos/MartXApplication/MartX.MVC/Views/_ViewStart.cshtml]
+[C:/Users/hesen/Desktop/MartxApp/MartXApplication/MartX.MVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

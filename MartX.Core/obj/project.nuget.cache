@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e2FHnZGR07Y=",
+  "dgSpecHash": "JD2/LhYaBZ0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\hesen\\source\\repos\\MartXApplication\\MartX.Core\\MartX.Core.csproj",
+  "projectFilePath": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.Core\\MartX.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hesen\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.3.0\\microsoft.aspnetcore.authentication.2.3.0.nupkg.sha512",
     "C:\\Users\\hesen\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",

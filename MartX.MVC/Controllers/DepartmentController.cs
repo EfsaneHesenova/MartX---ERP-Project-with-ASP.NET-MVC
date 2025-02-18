@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using MartX.BL.DTOs.CategoryDtos;
 using MartX.BL.DTOs.DepartmentDtos;
 using MartX.BL.Services.Abstractions;
 using MartX.BL.Services.Implementations;
@@ -122,7 +123,7 @@ namespace MartX.MVC.Controllers
             try
             {
                 await _departmentService.RestoreDepartmentAsync(id);
-                return RedirectToAction("Index");
+                return RedirectToAction("Trash");
             }
             catch (Exception ex)
             {
@@ -142,6 +143,21 @@ namespace MartX.MVC.Controllers
             {
                 return BadRequest(ex.Message);
             }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Trash()
+        {
+            try
+            {
+                ICollection<DepartmentGetDto> departments = await _departmentService.GetAllSoftDeletedDepartment();
+                return View(departments);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
         }
     }
 }

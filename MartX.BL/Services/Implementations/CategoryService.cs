@@ -4,13 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
+using MartX.BL.DTOs.BrandDtos;
 using MartX.BL.DTOs.CategoryDtos;
 using MartX.BL.ExternalServices.Abstractions;
 using MartX.BL.Services.Abstractions;
 using MartX.Core.Models;
 using MartX.DAL.Repositories.Abstractions;
+using MartX.DAL.Repositories.Implementations;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace MartX.BL.Services.Implementations;
 
@@ -34,6 +37,8 @@ public class CategoryService : ICategoryService
     public async Task<bool> CreateCategoryAsync(CategoryPostDto categoryPostDto)
     {
         Category category = _mapper.Map<Category>(categoryPostDto);
+        category.CreatedAt = DateTime.Now;
+
         await _categoryWriteRepository.CreateAsync(category);
 
         int rows = await _categoryWriteRepository.SaveChangesAsync();
@@ -62,9 +67,16 @@ public class CategoryService : ICategoryService
 
     public async Task<ICollection<CategoryGetDto>> GetAllCategoryAsync()
     {
-        ICollection<Category> categoryGets = await _categoryReadRepository.GetAllAsync(true);
+        ICollection<Category> categoryGets = await _categoryReadRepository.GetAllByCondition(p => !p.IsDeleted, true).ToListAsync();
         ICollection<CategoryGetDto> categorys = _mapper.Map<ICollection<CategoryGetDto>>(categoryGets);
         return categorys;
+    }
+
+    public async Task<ICollection<CategoryGetDto>> GetAllSoftDeletedCategory()
+    {
+        ICollection<Category> categories = await _categoryReadRepository.GetAllByCondition(p => p.IsDeleted, true).ToListAsync();
+        ICollection<CategoryGetDto> categoryGetDtos= _mapper.Map<ICollection<CategoryGetDto>>(categories);
+        return categoryGetDtos;
     }
 
     public async Task<CategoryGetDto> GetByIdCategoryAsync(Guid id)
@@ -84,6 +96,7 @@ public class CategoryService : ICategoryService
         if (!await _categoryReadRepository.IsExist(id)) { throw new Exception("Something went wrong"); }
         Category category = await _categoryReadRepository.GetOneByCondition(x => x.Id == id && x.IsDeleted);
         category.IsDeleted = false;
+        category.DeletedAt = null;
         _categoryWriteRepository.Update(category);
         int rows = await _categoryWriteRepository.SaveChangesAsync();
         if (rows == 0)
@@ -102,6 +115,7 @@ public class CategoryService : ICategoryService
         if (!await _categoryReadRepository.IsExist(id)) { throw new Exception("Something went wrong"); }
         Category category = await _categoryReadRepository.GetOneByCondition(x => x.Id == id && !x.IsDeleted);
         category.IsDeleted = true;
+        category.DeletedAt = DateTime.Now;
         _categoryWriteRepository.Update(category);
         int rows = await _categoryWriteRepository.SaveChangesAsync();
         if (rows == 0)
@@ -112,8 +126,13 @@ public class CategoryService : ICategoryService
 
     public async Task UpdateCategoryAsync(CategoryPutDto categoryPutDto)
     {
+
         if (!await _categoryReadRepository.IsExist(categoryPutDto.Id)) { throw new Exception("Something went wrong"); }
+        Category oldCategory = await _categoryReadRepository.GetByIdAsync(categoryPutDto.Id);
         Category category = _mapper.Map<Category>(categoryPutDto);
+        category.DeletedAt = oldCategory.DeletedAt;
+        category.CreatedAt = oldCategory.CreatedAt;
+        category.UpdatedAt = DateTime.Now;
         _categoryWriteRepository.Update(category);
         int rows = await _categoryWriteRepository.SaveChangesAsync();
         if (rows == 0)

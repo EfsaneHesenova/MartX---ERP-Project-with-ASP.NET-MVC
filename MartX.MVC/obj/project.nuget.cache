@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q+w0C2aYKHE=",
+  "dgSpecHash": "pzQPAOPREKg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\hesen\\source\\repos\\MartXApplication\\MartX.MVC\\MartX.MVC.csproj",
+  "projectFilePath": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\MartX.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hesen\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\hesen\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

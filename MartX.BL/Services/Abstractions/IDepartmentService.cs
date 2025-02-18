@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MartX.BL.DTOs.BrandDtos;
 using MartX.BL.DTOs.DepartmentDtos;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -14,6 +15,7 @@ namespace MartX.BL.Services.Abstractions
         Task DeleteDepartmentAsync(Guid id);
         Task SoftDeleteDepartmentAsync(Guid id);
         Task RestoreDepartmentAsync(Guid id);
+        Task<ICollection<DepartmentGetDto>> GetAllSoftDeletedDepartment();
         Task UpdateDepartmentAsync(DepartmentPutDto departmentPutDto);
         Task<ICollection<DepartmentGetDto>> GetAllDepartmentAsync();
         Task<DepartmentGetDto> GetByIdDepartmentAsync(Guid id);

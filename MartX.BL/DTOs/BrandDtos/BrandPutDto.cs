@@ -17,4 +17,5 @@ public class BrandPutDto
     public IFormFile Image { get; set; }
     public ICollection<SelectListItem>? Suppliers { get; set; }
     public Guid SupplierId { get; set; }
+
 }

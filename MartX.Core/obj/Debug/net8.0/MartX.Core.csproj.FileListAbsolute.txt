@@ -10,3 +10,16 @@ C:\Users\hesen\source\repos\MartXApplication\MartX.Core\obj\Debug\net8.0\MartX.C
 C:\Users\hesen\source\repos\MartXApplication\MartX.Core\obj\Debug\net8.0\refint\MartX.Core.dll
 C:\Users\hesen\source\repos\MartXApplication\MartX.Core\obj\Debug\net8.0\MartX.Core.pdb
 C:\Users\hesen\source\repos\MartXApplication\MartX.Core\obj\Debug\net8.0\ref\MartX.Core.dll
+C:\Users\hesen\Desktop\MartxApp\MartXApplication\MartX.Core\bin\Debug\net8.0\MartX.Core.deps.json
+C:\Users\hesen\Desktop\MartxApp\MartXApplication\MartX.Core\bin\Debug\net8.0\MartX.Core.dll
+C:\Users\hesen\Desktop\MartxApp\MartXApplication\MartX.Core\bin\Debug\net8.0\MartX.Core.pdb
+C:\Users\hesen\Desktop\MartxApp\MartXApplication\MartX.Core\obj\Debug\net8.0\MartX.Core.csproj.AssemblyReference.cache
+C:\Users\hesen\Desktop\MartxApp\MartXApplication\MartX.Core\obj\Debug\net8.0\MartX.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hesen\Desktop\MartxApp\MartXApplication\MartX.Core\obj\Debug\net8.0\MartX.Core.AssemblyInfoInputs.cache
+C:\Users\hesen\Desktop\MartxApp\MartXApplication\MartX.Core\obj\Debug\net8.0\MartX.Core.AssemblyInfo.cs
+C:\Users\hesen\Desktop\MartxApp\MartXApplication\MartX.Core\obj\Debug\net8.0\MartX.Core.csproj.CoreCompileInputs.cache
+C:\Users\hesen\Desktop\MartxApp\MartXApplication\MartX.Core\obj\Debug\net8.0\MartX.Core.sourcelink.json
+C:\Users\hesen\Desktop\MartxApp\MartXApplication\MartX.Core\obj\Debug\net8.0\MartX.Core.dll
+C:\Users\hesen\Desktop\MartxApp\MartXApplication\MartX.Core\obj\Debug\net8.0\refint\MartX.Core.dll
+C:\Users\hesen\Desktop\MartxApp\MartXApplication\MartX.Core\obj\Debug\net8.0\MartX.Core.pdb
+C:\Users\hesen\Desktop\MartxApp\MartXApplication\MartX.Core\obj\Debug\net8.0\ref\MartX.Core.dll

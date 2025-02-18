@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MartX.BL.DTOs.BrandDtos;
 using MartX.BL.DTOs.EmployeeDtos;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -15,6 +16,7 @@ public interface IEmployeeService
     Task SoftDeleteEmployeeAsync(Guid id);
     Task RestoreEmployeeAsync(Guid id);
     Task UpdateEmployeeAsync(EmployeePutDto employeePutDto);
+    Task<ICollection<EmployeeGetDto>> GetAllSoftDeletedEmployee();
     Task<ICollection<EmployeeGetDto>> GetAllEmployeeAsync();
     Task<EmployeeGetDto> GetByIdEmployeeAsync(Guid id);
     Task<ICollection<SelectListItem>> SelectAllEmployee();

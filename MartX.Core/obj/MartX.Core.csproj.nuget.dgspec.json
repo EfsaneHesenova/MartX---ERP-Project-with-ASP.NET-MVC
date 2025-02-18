@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hesen\\source\\repos\\MartXApplication\\MartX.Core\\MartX.Core.csproj": {}
+    "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.Core\\MartX.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hesen\\source\\repos\\MartXApplication\\MartX.Core\\MartX.Core.csproj": {
+    "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.Core\\MartX.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hesen\\source\\repos\\MartXApplication\\MartX.Core\\MartX.Core.csproj",
+        "projectUniqueName": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.Core\\MartX.Core.csproj",
         "projectName": "MartX.Core",
-        "projectPath": "C:\\Users\\hesen\\source\\repos\\MartXApplication\\MartX.Core\\MartX.Core.csproj",
+        "projectPath": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.Core\\MartX.Core.csproj",
         "packagesPath": "C:\\Users\\hesen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hesen\\source\\repos\\MartXApplication\\MartX.Core\\obj\\",
+        "outputPath": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

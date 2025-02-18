@@ -2,6 +2,7 @@
 @{
     int Number = 0;
 }
+
 <div class="main-content">
     <div class="page-content">
         <div class="container-fluid">
@@ -30,18 +31,11 @@
                                     <h2 class="card-title">Index Brand</h2>
                                 </div>
                                 <div class="col-lg-6">
-                                    <a 
-                                        asp-controller="Brand"
-                                        asp-action="Trash"
-                                        class="btn btn-lg btn-warning btn-rounded mr-1 waves-effect waves-light float-end">
-                                            <i class="fa-solid fa-trash"></i>
+                                    <a asp-controller="Brand" asp-action="Trash" class="btn btn-lg btn-warning btn-rounded float-end">
+                                        <i class="fa-solid fa-trash"></i>
                                     </a>
-                                    <a 
-                                        asp-controller="Brand" 
-                                        asp-action="Create"
-                                        style="position: relative; right: 10px;"
-                                        class="btn btn-lg btn-success btn-rounded waves-effect waves-light float-end">
-                                            Create
+                                    <a asp-controller="Brand" asp-action="Create" class="btn btn-lg btn-success btn-rounded float-end me-2">
+                                        Create
                                     </a>
                                 </div>
                             </div>
@@ -49,14 +43,14 @@
                         <div class="card-body">
                             <div class="table-rep-plugin">
                                 <div class="table-responsive mb-0" data-pattern="priority-columns">
-                                    <table id="tech-companies-1" class="table table-striped">
+                                    <table id="brand-table" class="table table-striped">
                                         <thead>
                                             <tr>
                                                 <th>Id</th>
-                                                <th data-priority="1">Title</th>
-                                                <th data-priority="3">Description</th>
-                                                <th data-priority="1">Image</th>
-                                                <th class="text-end" scope="col">Options</th>
+                                                <th>Title</th>
+                                                <th>Description</th>
+                                                <th>Image</th>
+                                                <th class="text-end">Options</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -64,7 +58,7 @@
                                             {
                                                 Number++;
                                                 <tr>
-                                                    <th><p class="mt-2">@Number</p> </th>
+                                                    <th><p class="mt-2">@Number</p></th>
                                                     <td><p class="mt-2">@item.Title</p></td>
                                                     <td><p class="mt-2">@item.Description</p></td>
                                                     <td>
@@ -90,22 +84,20 @@
                                                         </div>
                                                     </td>
                                                     <td class="text-end">
-                                                        <a asp-controller="Brand" asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary btn-rounded waves-effect waves-light mt-1 ms-2">
+                                                        <a asp-controller="Brand" asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary btn-rounded waves-effect waves-light">
                                                             <i class="fa-solid fa-pen"></i>
                                                         </a>
-                                                        <a asp-controller="Brand" asp-action="SoftDelete" asp-route-id="@item.Id" class="btn btn-warning btn-rounded waves-effect waves-light mt-1 ms-2">
+                                                        <a asp-controller="Brand" asp-action="SoftDelete" asp-route-id="@item.Id" class="btn btn-warning btn-rounded waves-effect waves-light">
                                                             <i class="fa-solid fa-rotate-right"></i>
                                                         </a>
-                                                        <a asp-controller="Brand" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-rounded waves-effect waves-light mt-1 ms-2">
+                                                        <a asp-controller="Brand" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-rounded waves-effect waves-light">
                                                             <i class="fa-solid fa-delete-left"></i>
                                                         </a>
-                                                        <a asp-controller="Brand" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-info btn-rounded waves-effect waves-light mt-1 ms-2">
+                                                        <a href="javascript:void(0);" data-id="@item.Id" class="btn btn-info btn-rounded waves-effect waves-light btn-detail">
                                                             <i class="fa-solid fa-info"></i>
                                                         </a>
                                                     </td>
-
                                                 </tr>
-                                                
                                             }
                                         </tbody>
                                     </table>
@@ -114,11 +106,19 @@
                         </div>
                     </div>
                     <!-- end card -->
-                </div> <!-- end col -->
-            </div> <!-- end row -->
-        </div> <!-- container-fluid -->
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- End Page-content -->
+
+    <!-- 📌 Modal (Brand Detail) -->
+    <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" id="detailModalContent">
+                <!-- AJAX ile içerik yüklenecek -->
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container-fluid">
@@ -136,4 +136,26 @@
     </footer>
 </div>
 
+<!-- 📌 AJAX ile Modal İçeriğini Yükle -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(document).on("click", ".btn-detail", function () {
+            var brandId = $(this).data("id");
+
+            $.ajax({
+                url: "/Brand/Detail/" + brandId,
+                type: "GET",
+                success: function (data) {
+                    $("#detailModalContent").html(data);
+                    $("#detailModal").modal("show");
+                },
+                error: function () {
+                    alert("Error loading brand details.");
+                }
+            });
+        });
+    });
+</script>
 

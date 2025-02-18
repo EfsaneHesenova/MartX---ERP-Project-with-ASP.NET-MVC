@@ -4,13 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
+using MartX.BL.DTOs.ProductDtos;
 using MartX.BL.DTOs.SupplierDtos;
 using MartX.BL.ExternalServices.Abstractions;
 using MartX.BL.Services.Abstractions;
 using MartX.Core.Models;
 using MartX.DAL.Repositories.Abstractions;
+using MartX.DAL.Repositories.Implementations;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace MartX.BL.Services.Implementations;
 
@@ -34,8 +37,8 @@ public class SupplierService : ISupplierService
     public async Task<bool> CreateSupplierAsync(SupplierPostDto supplierPostDto)
     {
         Supplier supplier = _mapper.Map<Supplier>(supplierPostDto);
-        await _supplierWriteRepository.CreateAsync(supplier);
-
+        supplier.CreatedAt = DateTime.Now;
+       await _supplierWriteRepository.CreateAsync(supplier);
         int rows = await _supplierWriteRepository.SaveChangesAsync();
         if (rows == 0)
         {
@@ -60,9 +63,16 @@ public class SupplierService : ISupplierService
         }
     }
 
+    public async Task<ICollection<SupplierGetDto>> GetAllSoftDeletedSupplier()
+    {
+        ICollection<Supplier> suppliers = await _supplierReadRepository.GetAllByCondition(p => p.IsDeleted, true).ToListAsync();
+        ICollection<SupplierGetDto> supplierGets = _mapper.Map<ICollection<SupplierGetDto>>(suppliers);
+        return supplierGets;
+    }
+
     public async Task<ICollection<SupplierGetDto>> GetAllSupplierAsync()
     {
-        ICollection<Supplier> supplierGets = await _supplierReadRepository.GetAllAsync(true);
+        ICollection<Supplier> supplierGets = await _supplierReadRepository.GetAllByCondition(p => !p.IsDeleted, true).ToListAsync();
         ICollection<SupplierGetDto> suppliers = _mapper.Map<ICollection<SupplierGetDto>>(supplierGets);
         return suppliers;
     }
@@ -84,6 +94,7 @@ public class SupplierService : ISupplierService
         if (!await _supplierReadRepository.IsExist(id)) { throw new Exception("Something went wrong"); }
         Supplier supplier = await _supplierReadRepository.GetOneByCondition(x => x.Id == id && x.IsDeleted);
         supplier.IsDeleted = false;
+        supplier.DeletedAt = null;
         _supplierWriteRepository.Update(supplier);
         int rows = await _supplierWriteRepository.SaveChangesAsync();
         if (rows == 0)
@@ -102,6 +113,7 @@ public class SupplierService : ISupplierService
         if (!await _supplierReadRepository.IsExist(id)) { throw new Exception("Something went wrong"); }
         Supplier supplier = await _supplierReadRepository.GetOneByCondition(x => x.Id == id && !x.IsDeleted);
         supplier.IsDeleted = true;
+        supplier.DeletedAt = DateTime.Now;
         _supplierWriteRepository.Update(supplier);
         int rows = await _supplierWriteRepository.SaveChangesAsync();
         if (rows == 0)
@@ -113,7 +125,11 @@ public class SupplierService : ISupplierService
     public async Task UpdateSupplierAsync(SupplierPutDto supplierPutDto)
     {
         if (!await _supplierReadRepository.IsExist(supplierPutDto.Id)) { throw new Exception("Something went wrong"); }
+        Supplier oldSupplier = await _supplierReadRepository.GetByIdAsync(supplierPutDto.Id);
         Supplier supplier = _mapper.Map<Supplier>(supplierPutDto);
+        supplier.DeletedAt = oldSupplier.DeletedAt;
+        supplier.CreatedAt = oldSupplier.CreatedAt;
+        supplier.UpdatedAt = DateTime.Now;
         _supplierWriteRepository.Update(supplier);
         int rows = await _supplierWriteRepository.SaveChangesAsync();
         if (rows == 0)

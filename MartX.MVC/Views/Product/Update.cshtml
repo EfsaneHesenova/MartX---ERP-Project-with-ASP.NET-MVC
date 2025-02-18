@@ -8,12 +8,12 @@
             <div class="row">
                 <div class="col-12">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0 font-size-18">Basic Elements</h4>
+                        <h4 class="mb-sm-0 font-size-18">Control Panel - Update Form</h4>
 
                         <div class="page-title-right">
                             <ol class="breadcrumb m-0">
-                                <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
-                                <li class="breadcrumb-item active">Basic Elements</li>
+                                <li class="breadcrumb-item"><a href="javascript: void(0);">Product</a></li>
+                                <li class="breadcrumb-item active">Update</li>
                             </ol>
                         </div>
                     </div>
@@ -25,11 +25,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Textual inputs</h4>
-                            <p class="card-title-desc">
-                                Here are examples of <code>.form-control</code> applied to each
-                                textual HTML5 <code>&lt;input&gt;</code> <code>type</code>.
-                            </p>
+                            <h2 class="card-title">Update Product</h2>
                         </div>
                         <div class="card-body p-4">
 
@@ -42,9 +38,10 @@
                                             <span asp-validation-for="Title" style="color: mediumpurple"></span>
                                         </div>
                                         <div class="mb-3">
-                                            <label asp-for="Description" class="form-label">Description</label>
-                                            <input asp-for="Description" class="form-control" type="text" id="title-input">
+                                            <label asp-for="Description" for="description-input" class="form-label">Description</label>
+                                            <input asp-for="Description" class="form-control" type="text" id="description-input">
                                             <span asp-validation-for="Description" style="color: mediumpurple"></span>
+
                                         </div>
                                         <div class="mb-3">
                                             <label asp-for="RealPrice" class="form-label">RealPrice</label>
@@ -52,14 +49,16 @@
                                             <span asp-validation-for="RealPrice" style="color: mediumpurple"></span>
                                         </div>
                                         <div class="mb-3">
-                                            <label asp-for="SalePercent" class="form-label">SalePercent</label>
-                                            <input asp-for="SalePercent" class="form-control" type="text" id="title-input">
+                                            <label asp-for="SalePercent" for="description-input" class="form-label">SalePercent</label>
+                                            <input asp-for="SalePercent" class="form-control" type="text" id="description-input">
                                             <span asp-validation-for="SalePercent" style="color: mediumpurple"></span>
+
                                         </div>
                                         <div class="mb-3">
-                                            <label asp-for="SalePrice" class="form-label">SalePrice</label>
-                                            <input asp-for="SalePrice" class="form-control" type="text" id="title-input">
+                                            <label asp-for="SalePrice" for="description-input" class="form-label">SalePrice </label>
+                                            <input asp-for="SalePrice" class="form-control" type="text" id="description-input">
                                             <span asp-validation-for="SalePrice" style="color: mediumpurple"></span>
+
                                         </div>
                                         <div class="mb-3">
                                             <label asp-for="Size" class="form-label">Size</label>
@@ -67,11 +66,11 @@
                                             <span asp-validation-for="Size" style="color: mediumpurple"></span>
                                         </div>
                                         <div class="mb-3">
-                                            <label asp-for="StockQuantity" class="form-label">StockQuantity</label>
-                                            <input asp-for="StockQuantity" class="form-control" type="text" id="title-input">
+                                            <label asp-for="StockQuantity" for="description-input" class="form-label">StockQuantity</label>
+                                            <input asp-for="StockQuantity" class="form-control" type="text" id="description-input">
                                             <span asp-validation-for="StockQuantity" style="color: mediumpurple"></span>
-                                        </div>
 
+                                        </div>
                                         <div class="mb-3">
                                             <label asp-for="Image" for="file-upload" class="form-label">Upload File</label>
                                             <input asp-for="Image" class="form-control" type="file" id="file-upload" multiple>
@@ -119,7 +118,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-6">
-                    <script>document.write(new Date().getFullYear())</script> © Minia.
+                    <script>document.write(new Date().getFullYear())</script> © MartX.
                 </div>
                 <div class="col-sm-6">
                     <div class="text-sm-end d-none d-sm-block">

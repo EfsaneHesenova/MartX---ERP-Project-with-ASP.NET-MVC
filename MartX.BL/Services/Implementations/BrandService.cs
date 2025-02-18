@@ -38,6 +38,7 @@ namespace MartX.BL.Services.Implementations
         public async Task<bool> CreateBrandAsync(BrandPostDto brandPostDto)
         {
             Brand brand = _mapper.Map<Brand>(brandPostDto);
+            brand.CreatedAt = DateTime.Now;
             brand.ImageUrl = await _fileUploadService.UploadFileAsync(brandPostDto.Image, _webHostEnvironment.WebRootPath, new[] { ".png", ".jpg", ".jpeg" });
 
             await _brandWriteRepository.CreateAsync(brand);
@@ -97,6 +98,7 @@ namespace MartX.BL.Services.Implementations
             if (!await _brandReadRepository.IsExist(id)) { throw new Exception("Something went wrong"); }
             Brand brand = await _brandReadRepository.GetOneByCondition(x => x.Id == id && x.IsDeleted);
             brand.IsDeleted = false;
+            brand.DeletedAt = null;
             _brandWriteRepository.Update(brand);
             int rows = await _brandWriteRepository.SaveChangesAsync();
             if (rows == 0)
@@ -115,6 +117,7 @@ namespace MartX.BL.Services.Implementations
             if (!await _brandReadRepository.IsExist(id)) { throw new Exception("Something went wrong"); }
             Brand brand = await _brandReadRepository.GetOneByCondition(x => x.Id == id && !x.IsDeleted);
             brand.IsDeleted = true;
+            brand.DeletedAt = DateTime.Now;
             _brandWriteRepository.Update(brand);
             int rows = await _brandWriteRepository.SaveChangesAsync();
             if (rows == 0)
@@ -126,7 +129,11 @@ namespace MartX.BL.Services.Implementations
         public async Task UpdateBrandAsync(BrandPutDto brandPutDto)
         {
             if (!await _brandReadRepository.IsExist(brandPutDto.Id)) { throw new Exception("Something went wrong"); }
+            Brand oldBrand = await _brandReadRepository.GetByIdAsync(brandPutDto.Id);
             Brand brand = _mapper.Map<Brand>(brandPutDto);
+            brand.DeletedAt = oldBrand.DeletedAt;
+            brand.CreatedAt = oldBrand.CreatedAt;
+            brand.UpdatedAt = DateTime.Now;
             brand.ImageUrl = await _fileUploadService.UploadFileAsync(brandPutDto.Image, _webHostEnvironment.WebRootPath, new[] { ".png", ".jpg", ".jpeg" });
             _brandWriteRepository.Update(brand);
             int rows = await _brandWriteRepository.SaveChangesAsync();

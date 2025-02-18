@@ -1,21 +1,21 @@
-﻿@model ICollection<CategoryGetDto>;
+﻿@model ICollection<CategoryGetDto>
+@{
+    int Number = 0;
+}
 <div class="main-content">
-
     <div class="page-content">
         <div class="container-fluid">
-
             <!-- start page title -->
             <div class="row">
                 <div class="col-12">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0 font-size-18">Control Panel - Index Form</h4>
+                        <h4 class="mb-sm-0 font-size-18">Control Panel - Create Form</h4>
                         <div class="page-title-right">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="javascript: void(0);">Control Panel</a></li>
                                 <li class="breadcrumb-item active">Category</li>
                             </ol>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -25,7 +25,24 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h2 class="card-title">Index Category</h2>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h2 class="card-title">Index Category</h2>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a asp-controller="Category"
+                                       asp-action="Trash"
+                                       class="btn btn-lg btn-warning btn-rounded mr-1 waves-effect waves-light float-end">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </a>
+                                    <a asp-controller="Category"
+                                       asp-action="Create"
+                                       style="position: relative; right: 10px;"
+                                       class="btn btn-lg btn-success btn-rounded waves-effect waves-light float-end">
+                                        Create
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="table-rep-plugin">
@@ -35,19 +52,19 @@
                                             <tr>
                                                 <th>Id</th>
                                                 <th data-priority="1">Title</th>
-                                                <th data-priority="3">Description</th>
-                                                <th scope="col">
-                                                    <a asp-controller="Category" asp-action="Create" class="btn btn-success">Create</a>
-                                                </th>
+                                                <th data-priority="3">Description</th>                         
+                                                <th class="text-end" scope="col">Options</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             @foreach (var item in Model)
                                             {
+                                                Number++;
                                                 <tr>
-                                                    <th>@item.Id<span class="co-name">Google Inc.</span></th>
-                                                    <td>@item.Title</td>
-                                                    <td>@item.Description</td>
+                                                    <th><p class="mt-2">@Number</p> </th>
+                                                    <td><p class="mt-2">@item.Title</p></td>
+                                                    <td><p class="mt-2">@item.Description</p></td>
+                                                   
                                                     <td class="text-end">
                                                         <a asp-controller="Category" asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary btn-rounded waves-effect waves-light mt-1 ms-2">
                                                             <i class="fa-solid fa-pen"></i>
@@ -60,29 +77,24 @@
                                                         </a>
                                                         <a asp-controller="Category" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-info btn-rounded waves-effect waves-light mt-1 ms-2">
                                                             <i class="fa-solid fa-info"></i>
-                                                        </a>a>
+                                                        </a>
                                                     </td>
 
                                                 </tr>
+
                                             }
-
-
                                         </tbody>
                                     </table>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                     <!-- end card -->
                 </div> <!-- end col -->
             </div> <!-- end row -->
-
         </div> <!-- container-fluid -->
     </div>
     <!-- End Page-content -->
-
 
     <footer class="footer">
         <div class="container-fluid">
@@ -99,4 +111,5 @@
         </div>
     </footer>
 </div>
-<!-- end main content-->
+
+

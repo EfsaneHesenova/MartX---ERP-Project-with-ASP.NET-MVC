@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using System.Drawing.Drawing2D;
+using System.Numerics;
 using AutoMapper;
 using MartX.BL.DTOs.BrandDtos;
 using MartX.BL.DTOs.SupplierDtos;
@@ -135,8 +136,7 @@ namespace MartX.MVC.Controllers
             {
 
                 BrandGetDto brandGetDto = await _brandService.GetByIdBrandAsync(id);
-                return View(brandGetDto);
-
+                return PartialView("_Detail", brandGetDto);
             }
             catch (Exception ex)
             {

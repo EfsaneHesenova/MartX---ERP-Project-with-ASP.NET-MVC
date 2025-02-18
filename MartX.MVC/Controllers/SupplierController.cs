@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
+using MartX.BL.DTOs.ProductDtos;
 using MartX.BL.DTOs.SupplierDtos;
 using MartX.BL.Services.Abstractions;
+using MartX.BL.Services.Implementations;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MartX.MVC.Controllers
@@ -134,12 +136,27 @@ namespace MartX.MVC.Controllers
             try
             {
                 await _supplierService.RestoreSupplierAsync(id);
-                return RedirectToAction("Index");
+                return RedirectToAction("Trash");
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Trash()
+        {
+            try
+            {
+                ICollection<SupplierGetDto> suppliers = await _supplierService.GetAllSoftDeletedSupplier();
+                return View(suppliers);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
         }
     }
 }

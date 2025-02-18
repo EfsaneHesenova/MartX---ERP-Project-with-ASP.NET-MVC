@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using MartX.BL.DTOs.DepartmentDtos;
 using MartX.BL.DTOs.EmployeeDtos;
 using MartX.BL.Services.Abstractions;
 using MartX.BL.Services.Implementations;
@@ -149,7 +150,7 @@ namespace MartX.MVC.Controllers
             {
 
                 await _employeeService.RestoreEmployeeAsync(id);
-                return RedirectToAction("Index");
+                return RedirectToAction("Trash");
 
             }
             catch (Exception ex)
@@ -170,6 +171,22 @@ namespace MartX.MVC.Controllers
             {
                 return BadRequest(ex.Message);
             }
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> Trash()
+        {
+            try
+            {
+                ICollection<EmployeeGetDto> employees = await _employeeService.GetAllSoftDeletedEmployee();
+                return View(employees);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
         }
     }
 }

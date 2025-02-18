@@ -1,21 +1,21 @@
-﻿@model ICollection<SupplierGetDto>;
+﻿@model ICollection<SupplierGetDto>
+@{
+    int Number = 0;
+}
 <div class="main-content">
-
     <div class="page-content">
         <div class="container-fluid">
-
             <!-- start page title -->
             <div class="row">
                 <div class="col-12">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0 font-size-18">Responsive Tables</h4>
+                        <h4 class="mb-sm-0 font-size-18">Control Panel - Create Form</h4>
                         <div class="page-title-right">
                             <ol class="breadcrumb m-0">
-                                <li class="breadcrumb-item"><a href="javascript: void(0);">Tables</a></li>
-                                <li class="breadcrumb-item active">Responsive Tables</li>
+                                <li class="breadcrumb-item"><a href="javascript: void(0);">Control Panel</a></li>
+                                <li class="breadcrumb-item active">Supplier</li>
                             </ol>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -25,8 +25,24 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Example</h4>
-                            <p class="card-title-desc">This is an experimental awesome solution for responsive tables with complex data.</p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h2 class="card-title">Index Supplier</h2>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a asp-controller="Supplier"
+                                       asp-action="Trash"
+                                       class="btn btn-lg btn-warning btn-rounded mr-1 waves-effect waves-light float-end">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </a>
+                                    <a asp-controller="Supplier"
+                                       asp-action="Create"
+                                       style="position: relative; right: 10px;"
+                                       class="btn btn-lg btn-success btn-rounded waves-effect waves-light float-end">
+                                        Create
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="table-rep-plugin">
@@ -40,71 +56,56 @@
                                                 <th data-priority="1">Email</th>
                                                 <th data-priority="3">ContactPerson</th>
                                                 <th data-priority="1">Address</th>
-                                                <th scope="col">
-                                                    <a asp-controller="Supplier" asp-action="Create" class="btn btn-success">Create</a>
-                                                </th>
+                                                <th class="text-end" scope="col">Options</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             @foreach (var item in Model)
                                             {
+                                                Number++;
                                                 <tr>
-                                                    <th>@item.Id<span class="co-name">Google Inc.</span></th>
-                                                    <td>@item.Name</td>
-                                                    <td>@item.PhoneNumber</td>
-                                                    <td>@item.Email</td>
-                                                    <td>@item.ContactPerson</td>
-                                                    <td>@item.Address</td>
-                                                    <td>
-                                                        <a asp-controller="Supplier" asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary btn-rounded waves-effect waves-light mt-2">
+                                                    <th><p class="mt-2">@Number</p> </th>
+                                                    <td><p class="mt-2">@item.Name</p></td>
+                                                    <td><p class="mt-2">@item.PhoneNumber</p></td>
+                                                    <td><p class="mt-2">@item.Email</p></td>
+                                                    <td><p class="mt-2">@item.ContactPerson</p></td>
+                                                    <td><p class="mt-2">@item.Address</p></td>
+                                                    <td class="text-end">
+                                                        <a asp-controller="Supplier" asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary btn-rounded waves-effect waves-light mt-1 ms-2">
                                                             <i class="fa-solid fa-pen"></i>
                                                         </a>
-                                                        @if (!item.IsDeleted)
-                                                        {
-                                                            <a asp-controller="Supplier" asp-action="SoftDelete" asp-route-id="@item.Id" class="btn btn-warning btn-rounded waves-effect waves-light mt-2">
-                                                                <i class="fa-solid fa-rotate-right"></i>
-                                                            </a>
-                                                        }
-                                                        else
-                                                        {
-                                                            <a asp-controller="Supplier" asp-action="Restore" asp-route-id="@item.Id" class="btn btn-secondary btn-rounded waves-effect waves-light mt-2">
-                                                                <i class="fa-solid fa-rotate-left"></i>
-                                                            </a>
-                                                        }
-                                                        <a asp-controller="Supplier" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-rounded waves-effect waves-light mt-2">
+                                                        <a asp-controller="Supplier" asp-action="SoftDelete" asp-route-id="@item.Id" class="btn btn-warning btn-rounded waves-effect waves-light mt-1 ms-2">
+                                                            <i class="fa-solid fa-rotate-right"></i>
+                                                        </a>
+                                                        <a asp-controller="Supplier" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-rounded waves-effect waves-light mt-1 ms-2">
                                                             <i class="fa-solid fa-delete-left"></i>
                                                         </a>
-                                                        <a asp-controller="Supplier" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-info btn-rounded waves-effect waves-light mt-2">
+                                                        <a asp-controller="Supplier" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-info btn-rounded waves-effect waves-light mt-1 ms-2">
                                                             <i class="fa-solid fa-info"></i>
                                                         </a>
                                                     </td>
 
                                                 </tr>
+
                                             }
-
-
                                         </tbody>
                                     </table>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                     <!-- end card -->
                 </div> <!-- end col -->
             </div> <!-- end row -->
-
         </div> <!-- container-fluid -->
     </div>
     <!-- End Page-content -->
-
 
     <footer class="footer">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-6">
-                    <script>document.write(new Date().getFullYear())</script> © Minia.
+                    <script>document.write(new Date().getFullYear())</script> © MartX.
                 </div>
                 <div class="col-sm-6">
                     <div class="text-sm-end d-none d-sm-block">
@@ -115,4 +116,5 @@
         </div>
     </footer>
 </div>
-<!-- end main content-->
+
+

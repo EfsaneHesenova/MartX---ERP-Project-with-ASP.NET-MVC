@@ -8834,11 +8834,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hesen\\source\\repos\\MartXApplication\\MartX.MVC\\MartX.MVC.csproj",
+      "projectUniqueName": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\MartX.MVC.csproj",
       "projectName": "MartX.MVC",
-      "projectPath": "C:\\Users\\hesen\\source\\repos\\MartXApplication\\MartX.MVC\\MartX.MVC.csproj",
+      "projectPath": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\MartX.MVC.csproj",
       "packagesPath": "C:\\Users\\hesen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hesen\\source\\repos\\MartXApplication\\MartX.MVC\\obj\\",
+      "outputPath": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8859,8 +8859,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\hesen\\source\\repos\\MartXApplication\\MartX.BL\\MartX.BL.csproj": {
-              "projectPath": "C:\\Users\\hesen\\source\\repos\\MartXApplication\\MartX.BL\\MartX.BL.csproj"
+            "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\MartX.BL.csproj": {
+              "projectPath": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\MartX.BL.csproj"
             }
           }
         }

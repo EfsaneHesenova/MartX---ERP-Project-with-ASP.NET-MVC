@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using MartX.BL.DTOs.BrandDtos;
 using MartX.BL.DTOs.DocumentImageUrlDtos;
+using MartX.BL.DTOs.EmployeeDtos;
 using MartX.BL.Services.Abstractions;
 using MartX.BL.Services.Implementations;
+using MartX.Core.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MartX.MVC.Controllers
@@ -21,7 +23,7 @@ namespace MartX.MVC.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(Guid id)
         {
             try
             {
@@ -34,13 +36,18 @@ namespace MartX.MVC.Controllers
             }
         }
         [HttpGet]
-        public async Task<IActionResult> Create()
+        public async Task<IActionResult> Create(Guid employeeId)
         {
             try
             {
-                var employee = await _employeeService.SelectAllEmployee();
-                DocumentImageUrlPostDto documentImageUrlPostDto = new DocumentImageUrlPostDto();
-                documentImageUrlPostDto.Employees = employee;
+                EmployeeGetDto dto = await _employeeService.GetByIdEmployeeAsync(employeeId);
+                Employee employee = _mapper.Map<Employee>(dto);
+                DocumentImageUrlPostDto documentImageUrlPostDto = new DocumentImageUrlPostDto()
+                {
+                    EmployeeId = employeeId,
+                    Employee = employee
+                };
+
                 return View(documentImageUrlPostDto);
 
             }
@@ -55,8 +62,6 @@ namespace MartX.MVC.Controllers
         {
             if (!ModelState.IsValid)
             {
-                var employee = await _employeeService.SelectAllEmployee();
-                documentImageUrlPostDto.Employees = employee;
                 return View(documentImageUrlPostDto);
             }
             try
@@ -79,8 +84,6 @@ namespace MartX.MVC.Controllers
 
                 DocumentImageUrlGetDto documentImageUrlGet = await _documentImageUrlService.GetByIdDocumentImageUrlAsync(id);
                 DocumentImageUrlPutDto document = _mapper.Map<DocumentImageUrlPutDto>(documentImageUrlGet);
-                var employee = await _employeeService.SelectAllEmployee();
-                document.Employees = employee;
                 return View(document);
 
             }
@@ -96,7 +99,6 @@ namespace MartX.MVC.Controllers
             if (!ModelState.IsValid)
             {
                 var employee = await _employeeService.SelectAllEmployee();
-                documentImageUrlPut.Employees = employee;
                 return View(documentImageUrlPut);
             }
             try
