@@ -12,6 +12,8 @@ namespace MartX.BL.DTOs.CheckoutItemDtos
         public Guid CheckoutId { get; set; }
         public Guid ProductId { get; set; }
         public Product? Product { get; set; }
+        public Guid BrandId { get; set; }
+        public Guid CategoryId { get; set; }
         public int Quantity { get; set; }
         public decimal UnitPrice { get; set; }
         public decimal? TotalPrice { get; set; }

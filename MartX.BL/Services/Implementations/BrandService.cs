@@ -77,7 +77,7 @@ namespace MartX.BL.Services.Implementations
 
         public async Task<ICollection<BrandGetDto>> GetAllBrand()
         {
-            ICollection<Brand> brandGets = await _brandReadRepository.GetAllByCondition(p => !p.IsDeleted, true, "Supplier").ToListAsync();
+            ICollection<Brand> brandGets = await _brandReadRepository.GetAllByCondition(p => !p.IsDeleted, true).ToListAsync();
             ICollection<BrandGetDto> brands = _mapper.Map<ICollection<BrandGetDto>>(brandGets);
             return brands;
         }

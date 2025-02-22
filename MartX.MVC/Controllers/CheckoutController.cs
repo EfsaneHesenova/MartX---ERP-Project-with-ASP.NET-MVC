@@ -1,5 +1,10 @@
 ﻿using System.Text.Json.Serialization;
+using AspNetCoreGeneratedDocument;
+using MartX.BL.DTOs.BrandDtos;
+using MartX.BL.DTOs.CategoryDtos;
 using MartX.BL.DTOs.CheckoutItemDtos;
+using MartX.BL.DTOs.ProductDtos;
+using MartX.BL.Services.Abstractions;
 using MartX.Core.Models;
 using MartX.DAL.Contexts;
 using Microsoft.AspNetCore.Mvc;
@@ -10,15 +15,32 @@ namespace MartX.MVC.Controllers
     public class CheckoutController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IBrandService _brandService;
+        private readonly ICategoryService _categoryService;
+        private readonly IProductService _productService;
 
-        public CheckoutController(AppDbContext context)
+        public CheckoutController(AppDbContext context, IBrandService brandService, ICategoryService categoryService, IProductService productService)
         {
             _context = context;
+            _brandService = brandService;
+            _categoryService = categoryService;
+            _productService = productService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            CheckoutDto checkoutDto = new CheckoutDto();
+            ICollection<BrandGetDto> brands = await _brandService.GetAllBrand();
+            ICollection<CategoryGetDto> categories = await _categoryService.GetAllCategoryAsync();
+            ICollection<ProductGetDto> products = await _productService.GetAllProductAsync(); 
+            CheckoutGetDto dto = new CheckoutGetDto()
+            {
+                CheckoutDto = checkoutDto,
+                Brands = brands,
+                Categories = categories,
+                Products = products
+            };
+            return View(dto);
         }
 
         public IActionResult AddToCheckout(int productId)

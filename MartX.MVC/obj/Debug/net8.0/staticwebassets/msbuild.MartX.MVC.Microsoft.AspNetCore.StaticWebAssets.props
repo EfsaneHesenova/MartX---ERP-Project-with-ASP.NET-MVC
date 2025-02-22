@@ -3528,6 +3528,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\5d32fed7-f740-4350-b1ff-01598a4d029f.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\5f5dfbc6-bc14-4e30-95d3-a2edb17e46a1.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MartX.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MartX.MVC</BasePath>
+      <RelativePath>uploads/5f5dfbc6-bc14-4e30-95d3-a2edb17e46a1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>fymjyxhlxi</Fingerprint>
+      <Integrity>CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\5f5dfbc6-bc14-4e30-95d3-a2edb17e46a1.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\61e575e7-b0d1-41bd-8386-a14fb6b0f920.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>MartX.MVC</SourceId>
@@ -3743,6 +3761,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\a1cf3094-23d0-41c0-a95e-33bf2a5aeb29.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\a448af48-f406-4c78-a849-86d8037bb16d.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MartX.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MartX.MVC</BasePath>
+      <RelativePath>uploads/a448af48-f406-4c78-a849-86d8037bb16d.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>98ao872l16</Fingerprint>
+      <Integrity>yS1L7emUVbAz2ZX3nOgP1GW2P7PaKy7vIEURORyNU3c=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\a448af48-f406-4c78-a849-86d8037bb16d.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\ae2c08b2-79b2-4d9f-8f22-a8739e397d1c.jpg'))">
       <SourceType>Package</SourceType>

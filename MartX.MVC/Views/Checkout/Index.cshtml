@@ -4,108 +4,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kasa Paneli</title>
+    <title>Cash Register Panel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .main-container {
+            position: relative;
+            left: 200px;
+            top: 50px;
+        }
+
+        .product-table-container {
+            margin-bottom: 30px;
+        }
+
+        .form-container {
+            margin-top: 20px;
+            position: relative;
+            left: 120px;
+        }
+
+            .form-container .form-select,
+            .form-container .form-control,
+            .form-container .btn {
+                width: 50% !important;
+            }
+    </style>
 </head>
 <body>
-    <div class="container mt-5">
-        <h2 class="text-center">Kasa Paneli</h2>
-        <div class="row">
-            <!-- Ürün Ekleme ve Listeleme Alanı -->
-            <div class="col-md-8">
-                <h4>Ürünler</h4>
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Ürün Adı</th>
-                            <th>Fiyat</th>
-                            <th>Adet</th>
-                            <th>Toplam</th>
-                            <th>Sil</th>
-                        </tr>
-                    </thead>
-                    <tbody id="productList">
-                        @if (Model.CheckoutDto.Items is not null)
-                        {
-                            @foreach (var item in Model.CheckoutDto.Items)
+    <div class="main-container">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 product-table-container">
+                    <h4>Products</h4>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productList">
+                            @if (Model.CheckoutDto.Items is not null && Model.CheckoutDto.Items.Any())
                             {
-                                <tr>
-                                    <td>@item.Product.Title</td>
-                                    <td>@item.Product.SalePrice</td>
-                                    <td>@item.Quantity</td>
-                                    <td>@(item.Quantity * item.Product.SalePrice)</td>
-                                    <td><button class="btn btn-danger btn-sm" onclick="removeProduct(this)">Sil</button></td>
-                                </tr>
+                                @foreach (var item in Model.CheckoutDto.Items)
+                                {
+                                    <tr>
+                                        <td>@item.Product.Title</td>
+                                        <td>@item.Product.SalePrice</td>
+                                        <td>@item.Quantity</td>
+                                        <td>@(item.Quantity * item.Product.SalePrice)</td>
+                                        <td><button class="btn btn-danger btn-sm" onclick="removeProduct(this)">Remove</button></td>
+                                    </tr>
+                                }
                             }
-                        }
-                        else
-                        {
-                            <p>Empty</p>
-                        }
-                    </tbody>
-                </table>
-                <button class="btn btn-success w-100">Satışı Tamamla</button>
-            </div>
+                            else
+                            {
+                                <tr id="emptyCartMessage"><td colspan="5">Cart is empty</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                    <button class="btn btn-success w-100">Complete Sale</button>
+                </div>
+                <div class="col-md-6 form-container">
+                    <h4>Add Product</h4>
+                    <form method="post">
+                        <div class="mb-3">
+                            <label class="form-label">Selection Type</label>
+                            <select id="selectionType" class="form-select" onchange="loadSelectionOptions()">
+                                <option value="category">By Category</option>
+                                <option value="brand">By Brand</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Make a Selection</label>
+                            <select id="selectionDropdown" class="form-select" onchange="loadProducts()">
+                                <option value="">Select</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Select Product</label>
+                            <select id="productDropdown" class="form-select">
+                                <option value="">Select</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Quantity</label>
+                            <input type="number" class="form-control" id="quantityInput" value="1" min="1" required>
+                        </div>
 
-            <!-- Ürün Ekleme Formu -->
-            <div class="col-md-4">
-                <h4>Ürün Ekle</h4>
-                <form method="post">
-                    <div class="mb-3">
-                        <label class="form-label">Seçim Türü</label>
-                        <div>
-                            <input type="radio" name="selectionType" value="category" id="categoryRadio" checked>
-                            <label for="categoryRadio">Kategoriye Göre</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="selectionType" value="brand" id="brandRadio">
-                            <label for="brandRadio">Markaya Göre</label>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Seçim Yap</label>
-                        <select id="selectionDropdown" class="form-select">
-                            <option>Seçiniz</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Ürünler</label>
-                        <select id="productDropdown" class="form-select">
-                            <option>Önce seçim yapın</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Adet</label>
-                        <input type="number" class="form-control" id="quantityInput" value="1" min="1" required>
-                    </div>
-                    <button type="button" class="btn btn-primary w-100" onclick="addProduct()">Ekle</button>
-                </form>
+                        <button type="button" class="btn btn-primary w-100" onclick="addProduct()">Add</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             loadSelectionOptions();
-            document.querySelectorAll("input[name='selectionType']").forEach(radio => {
-                radio.addEventListener("change", loadSelectionOptions);
-            });
         });
 
         function loadSelectionOptions() {
             let dropdown = document.getElementById("selectionDropdown");
-            dropdown.innerHTML = "<option>Seçiniz</option>";
-            let selectionType = document.querySelector("input[name='selectionType']:checked").value;
-            let options = selectionType === "category" ? @Html.Raw(Json.Serialize(Model.Categories)) : @Html.Raw(Json.Serialize(Model.Brands));
+            dropdown.innerHTML = '<option value="">Select</option>';
+            let selectionType = document.getElementById("selectionType").value;
+            let options = selectionType === "category" ? @Html.Raw(Json.Serialize(Model.Categories ?? new List<CategoryGetDto>())) : @Html.Raw(Json.Serialize(Model.Brands ?? new List<BrandGetDto>()));
             options.forEach(opt => {
                 let option = document.createElement("option");
-                option.value = opt.Value;
-                option.textContent = opt.Text;
+                option.value = opt.id;
+                option.textContent = opt.title || opt.name;
                 dropdown.appendChild(option);
             });
         }
-    </script>
 
+        function loadProducts() {
+            let productDropdown = document.getElementById("productDropdown");
+            productDropdown.innerHTML = '<option value="">Select</option>';
+            let selectionType = document.getElementById("selectionType").value;
+            let selectedId = document.getElementById("selectionDropdown").value;
+            let products = @Html.Raw(Json.Serialize(Model.Products ?? new List<ProductGetDto>()));
+            let filteredProducts = products.filter(product => (selectionType === "category" ? product.categoryId : product.brandId) === selectedId);
+            filteredProducts.forEach(product => {
+                let option = document.createElement("option");
+                option.value = product.id;
+                option.setAttribute("data-price", product.salePrice);
+                option.textContent = product.title;
+                productDropdown.appendChild(option);
+            });
+        }
+
+        function addProduct() {
+            let productDropdown = document.getElementById("productDropdown");
+            let selectedOption = productDropdown.options[productDropdown.selectedIndex];
+            let selectedProductId = selectedOption.value;
+            let quantity = document.getElementById("quantityInput").value;
+            let price = selectedOption.getAttribute("data-price");
+
+            if (!selectedProductId) {
+                alert("Please select a product.");
+                return;
+            }
+
+            let productTitle = selectedOption.text;
+            let productList = document.getElementById("productList");
+            let emptyCartMessage = document.getElementById("emptyCartMessage");
+            if (emptyCartMessage) emptyCartMessage.remove();
+
+            let newRow = productList.insertRow();
+            newRow.innerHTML = `
+                <td>${productTitle}</td>
+                <td>${price}</td>
+                <td>${quantity}</td>
+                <td>${(quantity * price).toFixed(2)}</td>
+                <td><button class="btn btn-danger btn-sm" onclick="removeProduct(this)">Remove</button></td>
+            `;
+        }
+
+        function removeProduct(button) {
+            let row = button.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+            let productList = document.getElementById("productList");
+            if (!productList.hasChildNodes()) {
+                productList.innerHTML = '<tr id="emptyCartMessage"><td colspan="5">Cart is empty</td></tr>';
+            }
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

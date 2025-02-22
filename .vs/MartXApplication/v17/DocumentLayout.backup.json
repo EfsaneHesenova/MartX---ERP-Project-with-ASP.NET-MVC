@@ -7,32 +7,44 @@
       "RelativeMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|solutionrelative:martx.mvc\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.bl\\dtos\\checkoutitemdtos\\checkoutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|solutionrelative:martx.bl\\dtos\\checkoutitemdtos\\checkoutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.bl\\services\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|solutionrelative:martx.bl\\services\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.mvc\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|solutionrelative:martx.mvc\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.bl\\dtos\\checkoutitemdtos\\checkoutgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|solutionrelative:martx.bl\\dtos\\checkoutitemdtos\\checkoutgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.mvc\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|solutionrelative:martx.mvc\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.mvc\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|solutionrelative:martx.mvc\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.bl\\dtos\\checkoutitemdtos\\checkoutitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|solutionrelative:martx.bl\\dtos\\checkoutitemdtos\\checkoutitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|solutionrelative:martx.mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.bl\\services\\implementations\\brandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|solutionrelative:martx.bl\\services\\implementations\\brandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.mvc\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|solutionrelative:martx.mvc\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6935DBB0-6E74-4067-AB99-C50AA5501E99}|MartX.Core\\MartX.Core.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.core\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6935DBB0-6E74-4067-AB99-C50AA5501E99}|MartX.Core\\MartX.Core.csproj|solutionrelative:martx.core\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.bl\\dtos\\checkoutitemdtos\\checkoutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|solutionrelative:martx.bl\\dtos\\checkoutitemdtos\\checkoutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.bl\\dtos\\productdtos\\productgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|solutionrelative:martx.bl\\dtos\\productdtos\\productgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.mvc\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|solutionrelative:martx.mvc\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|solutionrelative:martx.mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.bl\\dtos\\productdtos\\productpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -123,16 +135,8 @@
       "RelativeMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|solutionrelative:martx.bl\\services\\implementations\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.bl\\services\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|solutionrelative:martx.bl\\services\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.bl\\services\\implementations\\supplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|solutionrelative:martx.bl\\services\\implementations\\supplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.bl\\services\\implementations\\brandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|solutionrelative:martx.bl\\services\\implementations\\brandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.bl\\services\\abstractions\\ibrandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -227,10 +231,6 @@
       "RelativeMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|solutionrelative:martx.bl\\externalservices\\abstractions\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.mvc\\views\\brand\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|solutionrelative:martx.mvc\\views\\brand\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.bl\\services\\implementations\\documentimageurlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|solutionrelative:martx.bl\\services\\implementations\\documentimageurlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -257,10 +257,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.mvc\\views\\product\\trash.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|solutionrelative:martx.mvc\\views\\product\\trash.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.bl\\dtos\\productdtos\\productgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41521B80-B162-4219-BA7A-9A0CFE4F40C2}|MartX.BL\\MartX.BL.csproj|solutionrelative:martx.bl\\dtos\\productdtos\\productgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9089F20A-F935-4F61-9D6C-89EFB1BAE481}|MartX.MVC\\MartX.MVC.csproj|c:\\users\\hesen\\desktop\\martxapp\\martxapplication\\martx.mvc\\views\\brand\\trash.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -314,11 +310,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 385,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "BrandController.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Controllers\\BrandController.cs",
               "RelativeDocumentMoniker": "MartX.MVC\\Controllers\\BrandController.cs",
@@ -327,20 +323,60 @@
               "ViewState": "AgIAAMIAAAAAAAAAAAAcwCEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-15T21:04:20.479Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CheckoutItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\CheckoutItemDtos\\CheckoutItemDto.cs",
+              "RelativeDocumentMoniker": "MartX.BL\\DTOs\\CheckoutItemDtos\\CheckoutItemDto.cs",
+              "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\CheckoutItemDtos\\CheckoutItemDto.cs",
+              "RelativeToolTip": "MartX.BL\\DTOs\\CheckoutItemDtos\\CheckoutItemDto.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAuwA8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T16:22:03.875Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "MartX.MVC\\Controllers\\CheckoutController.cs",
+              "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "MartX.MVC\\Controllers\\CheckoutController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAYwCgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T15:50:13.721Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CheckoutGetDto.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\CheckoutItemDtos\\CheckoutGetDto.cs",
               "RelativeDocumentMoniker": "MartX.BL\\DTOs\\CheckoutItemDtos\\CheckoutGetDto.cs",
               "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\CheckoutItemDtos\\CheckoutGetDto.cs",
               "RelativeToolTip": "MartX.BL\\DTOs\\CheckoutItemDtos\\CheckoutGetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBAAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T19:18:03.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BrandService.cs",
+              "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Implementations\\BrandService.cs",
+              "RelativeDocumentMoniker": "MartX.BL\\Services\\Implementations\\BrandService.cs",
+              "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Implementations\\BrandService.cs",
+              "RelativeToolTip": "MartX.BL\\Services\\Implementations\\BrandService.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAgwFAAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T20:12:58.101Z",
               "EditorCaption": ""
             },
             {
@@ -349,68 +385,68 @@
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Checkout\\Index.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Checkout\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Checkout\\Index.cshtml",
-              "RelativeToolTip": "MartX.MVC\\Views\\Checkout\\Index.cshtml",
-              "ViewState": "AgIAABMAAAAAAAAAAAAYwCAAAAAoAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Checkout\\Index.cshtml*",
+              "RelativeToolTip": "MartX.MVC\\Views\\Checkout\\Index.cshtml*",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAswLQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-21T19:12:34.339Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CheckoutItemDto.cs",
-              "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\CheckoutItemDtos\\CheckoutItemDto.cs",
-              "RelativeDocumentMoniker": "MartX.BL\\DTOs\\CheckoutItemDtos\\CheckoutItemDto.cs",
-              "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\CheckoutItemDtos\\CheckoutItemDto.cs",
-              "RelativeToolTip": "MartX.BL\\DTOs\\CheckoutItemDtos\\CheckoutItemDto.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAuwA8AAAAlAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Brand.cs",
+              "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.Core\\Models\\Brand.cs",
+              "RelativeDocumentMoniker": "MartX.Core\\Models\\Brand.cs",
+              "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.Core\\Models\\Brand.cs",
+              "RelativeToolTip": "MartX.Core\\Models\\Brand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T16:22:03.875Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Category\\Create.cshtml",
-              "RelativeDocumentMoniker": "MartX.MVC\\Views\\Category\\Create.cshtml",
-              "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Category\\Create.cshtml",
-              "RelativeToolTip": "MartX.MVC\\Views\\Category\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-21T19:15:59.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Product\\Create.cshtml",
-              "RelativeDocumentMoniker": "MartX.MVC\\Views\\Product\\Create.cshtml",
-              "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Product\\Create.cshtml",
-              "RelativeToolTip": "MartX.MVC\\Views\\Product\\Create.cshtml",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAowF0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-17T14:07:17.112Z",
+              "WhenOpened": "2025-02-22T14:35:01.906Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Implementations\\ProductService.cs",
+              "RelativeDocumentMoniker": "MartX.BL\\Services\\Implementations\\ProductService.cs",
+              "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Implementations\\ProductService.cs",
+              "RelativeToolTip": "MartX.BL\\Services\\Implementations\\ProductService.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAA8wFMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T20:18:30.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CheckoutDto.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\CheckoutItemDtos\\CheckoutDto.cs",
               "RelativeDocumentMoniker": "MartX.BL\\DTOs\\CheckoutItemDtos\\CheckoutDto.cs",
               "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\CheckoutItemDtos\\CheckoutDto.cs",
               "RelativeToolTip": "MartX.BL\\DTOs\\CheckoutItemDtos\\CheckoutDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T17:21:14.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
+              "Title": "ProductGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\ProductDtos\\ProductGetDto.cs",
+              "RelativeDocumentMoniker": "MartX.BL\\DTOs\\ProductDtos\\ProductGetDto.cs",
+              "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\ProductDtos\\ProductGetDto.cs",
+              "RelativeToolTip": "MartX.BL\\DTOs\\ProductDtos\\ProductGetDto.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T20:47:39.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\_ViewImports.cshtml",
@@ -418,12 +454,23 @@
               "RelativeToolTip": "MartX.MVC\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-21T19:21:57.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T19:21:57.646Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "MartX.MVC\\Views\\Product\\Create.cshtml",
+              "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "MartX.MVC\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAowF0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-17T14:07:17.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "CheckoutItem.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.Core\\Models\\CheckoutItem.cs",
               "RelativeDocumentMoniker": "MartX.Core\\Models\\CheckoutItem.cs",
@@ -431,25 +478,11 @@
               "RelativeToolTip": "MartX.Core\\Models\\CheckoutItem.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T17:15:45.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T17:15:45.09Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CheckoutController.cs",
-              "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Controllers\\CheckoutController.cs",
-              "RelativeDocumentMoniker": "MartX.MVC\\Controllers\\CheckoutController.cs",
-              "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Controllers\\CheckoutController.cs",
-              "RelativeToolTip": "MartX.MVC\\Controllers\\CheckoutController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T15:50:13.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "ProductPostDto.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\ProductDtos\\ProductPostDto.cs",
               "RelativeDocumentMoniker": "MartX.BL\\DTOs\\ProductDtos\\ProductPostDto.cs",
@@ -457,12 +490,11 @@
               "RelativeToolTip": "MartX.BL\\DTOs\\ProductDtos\\ProductPostDto.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:20.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:20.674Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "DepartmentController.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "MartX.MVC\\Controllers\\DepartmentController.cs",
@@ -470,12 +502,11 @@
               "RelativeToolTip": "MartX.MVC\\Controllers\\DepartmentController.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAkwCsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T15:11:19.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T15:11:19.53Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Employee\\Index.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Employee\\Index.cshtml",
@@ -483,12 +514,11 @@
               "RelativeToolTip": "MartX.MVC\\Views\\Employee\\Index.cshtml",
               "ViewState": "AgIAAJMAAAAAAAAAAAAAAKMAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-17T13:34:55.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T13:34:55.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Brand\\Index.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Brand\\Index.cshtml",
@@ -496,12 +526,11 @@
               "RelativeToolTip": "MartX.MVC\\Views\\Brand\\Index.cshtml",
               "ViewState": "AgIAAIEAAAAAAAAAAAAtwIcAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-16T15:38:13.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T15:38:13.508Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "Sizes.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.Core\\Enums\\Sizes.cs",
               "RelativeDocumentMoniker": "MartX.Core\\Enums\\Sizes.cs",
@@ -509,12 +538,11 @@
               "RelativeToolTip": "MartX.Core\\Enums\\Sizes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T14:47:57.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T14:47:57.208Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Product\\Index.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Product\\Index.cshtml",
@@ -522,12 +550,11 @@
               "RelativeToolTip": "MartX.MVC\\Views\\Product\\Index.cshtml",
               "ViewState": "AgIAAPMAAAAAAAAAAAAAAPkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-18T15:51:55.979Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T15:51:55.979Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "MartX.MVC\\Controllers\\EmployeeController.cs",
@@ -535,12 +562,11 @@
               "RelativeToolTip": "MartX.MVC\\Controllers\\EmployeeController.cs",
               "ViewState": "AgIAAHMAAAAAAAAAAADwvxoAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T15:12:46.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T15:12:46.272Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "_Detail.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Employee\\_Detail.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Employee\\_Detail.cshtml",
@@ -548,12 +574,11 @@
               "RelativeToolTip": "MartX.MVC\\Views\\Employee\\_Detail.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-18T15:44:31.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T15:44:31.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Department\\Index.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Department\\Index.cshtml",
@@ -561,12 +586,11 @@
               "RelativeToolTip": "MartX.MVC\\Views\\Department\\Index.cshtml",
               "ViewState": "AgIAADgAAAAAAAAAAAAowEwAAAB8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-17T14:28:11.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:28:11.454Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Category\\Index.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Category\\Index.cshtml",
@@ -574,12 +598,11 @@
               "RelativeToolTip": "MartX.MVC\\Views\\Category\\Index.cshtml",
               "ViewState": "AgIAALcAAAAAAAAAAAAowMsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-18T15:30:17.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T15:30:17.442Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Supplier\\Index.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Supplier\\Index.cshtml",
@@ -587,12 +610,11 @@
               "RelativeToolTip": "MartX.MVC\\Views\\Supplier\\Index.cshtml",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAAEoAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-15T20:51:41.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T20:51:41.202Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "MartX.MVC\\Controllers\\CategoryController.cs",
@@ -600,12 +622,11 @@
               "RelativeToolTip": "MartX.MVC\\Controllers\\CategoryController.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAkwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T21:04:38.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T21:04:38.116Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "BrandGetDto.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\BrandDtos\\BrandGetDto.cs",
               "RelativeDocumentMoniker": "MartX.BL\\DTOs\\BrandDtos\\BrandGetDto.cs",
@@ -613,12 +634,11 @@
               "RelativeToolTip": "MartX.BL\\DTOs\\BrandDtos\\BrandGetDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:10:13.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T20:10:13.107Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "BrandPostDto.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\BrandDtos\\BrandPostDto.cs",
               "RelativeDocumentMoniker": "MartX.BL\\DTOs\\BrandDtos\\BrandPostDto.cs",
@@ -626,12 +646,11 @@
               "RelativeToolTip": "MartX.BL\\DTOs\\BrandDtos\\BrandPostDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:10:17.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T20:10:17.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "CategoryService.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Implementations\\CategoryService.cs",
               "RelativeDocumentMoniker": "MartX.BL\\Services\\Implementations\\CategoryService.cs",
@@ -639,12 +658,11 @@
               "RelativeToolTip": "MartX.BL\\Services\\Implementations\\CategoryService.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAgwDMAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:13:08.094Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T20:13:08.094Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "DepartmentService.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Implementations\\DepartmentService.cs",
               "RelativeDocumentMoniker": "MartX.BL\\Services\\Implementations\\DepartmentService.cs",
@@ -652,12 +670,11 @@
               "RelativeToolTip": "MartX.BL\\Services\\Implementations\\DepartmentService.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAgwEcAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:15:19.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T20:15:19.802Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "SupplierController.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Controllers\\SupplierController.cs",
               "RelativeDocumentMoniker": "MartX.MVC\\Controllers\\SupplierController.cs",
@@ -665,12 +682,11 @@
               "RelativeToolTip": "MartX.MVC\\Controllers\\SupplierController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwCYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T15:14:27.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T15:14:27.442Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "MartX.MVC\\Controllers\\ProductController.cs",
@@ -678,12 +694,11 @@
               "RelativeToolTip": "MartX.MVC\\Controllers\\ProductController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAAwBwAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T15:13:38.167Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T15:13:38.167Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "DocumentImageUrlController.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Controllers\\DocumentImageUrlController.cs",
               "RelativeDocumentMoniker": "MartX.MVC\\Controllers\\DocumentImageUrlController.cs",
@@ -691,12 +706,11 @@
               "RelativeToolTip": "MartX.MVC\\Controllers\\DocumentImageUrlController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T15:12:45.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T15:12:45.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "EmployeeService.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Implementations\\EmployeeService.cs",
               "RelativeDocumentMoniker": "MartX.BL\\Services\\Implementations\\EmployeeService.cs",
@@ -704,25 +718,11 @@
               "RelativeToolTip": "MartX.BL\\Services\\Implementations\\EmployeeService.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAgwEoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:16:50.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T20:16:50.39Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Implementations\\ProductService.cs",
-              "RelativeDocumentMoniker": "MartX.BL\\Services\\Implementations\\ProductService.cs",
-              "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Implementations\\ProductService.cs",
-              "RelativeToolTip": "MartX.BL\\Services\\Implementations\\ProductService.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAYwEsAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:18:30.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "SupplierService.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Implementations\\SupplierService.cs",
               "RelativeDocumentMoniker": "MartX.BL\\Services\\Implementations\\SupplierService.cs",
@@ -730,25 +730,11 @@
               "RelativeToolTip": "MartX.BL\\Services\\Implementations\\SupplierService.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAgwE4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:19:29.934Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T20:19:29.934Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "BrandService.cs",
-              "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Implementations\\BrandService.cs",
-              "RelativeDocumentMoniker": "MartX.BL\\Services\\Implementations\\BrandService.cs",
-              "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Implementations\\BrandService.cs",
-              "RelativeToolTip": "MartX.BL\\Services\\Implementations\\BrandService.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAgwEoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:12:58.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "IBrandService.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Abstractions\\IBrandService.cs",
               "RelativeDocumentMoniker": "MartX.BL\\Services\\Abstractions\\IBrandService.cs",
@@ -756,12 +742,11 @@
               "RelativeToolTip": "MartX.BL\\Services\\Abstractions\\IBrandService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:10:31.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T20:10:31.851Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "ISupplierService.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Abstractions\\ISupplierService.cs",
               "RelativeDocumentMoniker": "MartX.BL\\Services\\Abstractions\\ISupplierService.cs",
@@ -769,12 +754,11 @@
               "RelativeToolTip": "MartX.BL\\Services\\Abstractions\\ISupplierService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:12:27.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T20:12:27.466Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "IProductService.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Abstractions\\IProductService.cs",
               "RelativeDocumentMoniker": "MartX.BL\\Services\\Abstractions\\IProductService.cs",
@@ -782,12 +766,11 @@
               "RelativeToolTip": "MartX.BL\\Services\\Abstractions\\IProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:12:06.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T20:12:06.37Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "IEmployeeService.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Abstractions\\IEmployeeService.cs",
               "RelativeDocumentMoniker": "MartX.BL\\Services\\Abstractions\\IEmployeeService.cs",
@@ -795,12 +778,11 @@
               "RelativeToolTip": "MartX.BL\\Services\\Abstractions\\IEmployeeService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:11:51.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T20:11:51.022Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "IDepartmentService.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Abstractions\\IDepartmentService.cs",
               "RelativeDocumentMoniker": "MartX.BL\\Services\\Abstractions\\IDepartmentService.cs",
@@ -808,12 +790,11 @@
               "RelativeToolTip": "MartX.BL\\Services\\Abstractions\\IDepartmentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:11:27.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T20:11:27.232Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "ICategoryService.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Abstractions\\ICategoryService.cs",
               "RelativeDocumentMoniker": "MartX.BL\\Services\\Abstractions\\ICategoryService.cs",
@@ -821,12 +802,11 @@
               "RelativeToolTip": "MartX.BL\\Services\\Abstractions\\ICategoryService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:10:56.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T20:10:56.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "ReadRepository.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.DAL\\Repositories\\Implementations\\ReadRepository.cs",
               "RelativeDocumentMoniker": "MartX.DAL\\Repositories\\Implementations\\ReadRepository.cs",
@@ -838,7 +818,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Home\\Index.cshtml",
@@ -850,7 +830,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "app.min.css",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\assets\\css\\app.min.css",
               "RelativeDocumentMoniker": "MartX.MVC\\wwwroot\\assets\\css\\app.min.css",
@@ -862,7 +842,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "bootstrap.min.css",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\assets\\css\\bootstrap.min.css",
               "RelativeDocumentMoniker": "MartX.MVC\\wwwroot\\assets\\css\\bootstrap.min.css",
@@ -874,7 +854,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "chart.umd.js",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\assets\\libs\\chart.js\\chart.umd.js",
               "RelativeDocumentMoniker": "MartX.MVC\\wwwroot\\assets\\libs\\chart.js\\chart.umd.js",
@@ -886,7 +866,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "apexcharts.min.js",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\assets\\libs\\apexcharts\\apexcharts.min.js",
               "RelativeDocumentMoniker": "MartX.MVC\\wwwroot\\assets\\libs\\apexcharts\\apexcharts.min.js",
@@ -898,7 +878,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "chartjs.init.js",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\assets\\js\\pages\\chartjs.init.js",
               "RelativeDocumentMoniker": "MartX.MVC\\wwwroot\\assets\\js\\pages\\chartjs.init.js",
@@ -910,7 +890,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "preloader.min.css",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\assets\\css\\preloader.min.css",
               "RelativeDocumentMoniker": "MartX.MVC\\wwwroot\\assets\\css\\preloader.min.css",
@@ -922,7 +902,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "icons.min.css",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\assets\\css\\icons.min.css",
               "RelativeDocumentMoniker": "MartX.MVC\\wwwroot\\assets\\css\\icons.min.css",
@@ -934,7 +914,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "_Detail.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Supplier\\_Detail.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Supplier\\_Detail.cshtml",
@@ -946,7 +926,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Shared\\_Layout.cshtml",
@@ -958,7 +938,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "_Detail.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Product\\_Detail.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Product\\_Detail.cshtml",
@@ -970,7 +950,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "_Detail.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Department\\_Detail.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Department\\_Detail.cshtml",
@@ -982,7 +962,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "_Detail.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Category\\_Detail.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Category\\_Detail.cshtml",
@@ -994,7 +974,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "_Detail.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Brand\\_Detail.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Brand\\_Detail.cshtml",
@@ -1006,7 +986,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\ExternalServices\\Implementations\\EmailService.cs",
               "RelativeDocumentMoniker": "MartX.BL\\ExternalServices\\Implementations\\EmailService.cs",
@@ -1018,7 +998,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\ExternalServices\\Abstractions\\IEmailService.cs",
               "RelativeDocumentMoniker": "MartX.BL\\ExternalServices\\Abstractions\\IEmailService.cs",
@@ -1027,18 +1007,6 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-18T14:33:50.882Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Brand\\Create.cshtml",
-              "RelativeDocumentMoniker": "MartX.MVC\\Views\\Brand\\Create.cshtml",
-              "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Brand\\Create.cshtml",
-              "RelativeToolTip": "MartX.MVC\\Views\\Brand\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-17T14:59:18.295Z"
             },
             {
               "$type": "Document",
@@ -1127,18 +1095,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 64,
-              "Title": "ProductGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\ProductDtos\\ProductGetDto.cs",
-              "RelativeDocumentMoniker": "MartX.BL\\DTOs\\ProductDtos\\ProductGetDto.cs",
-              "ToolTip": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\ProductDtos\\ProductGetDto.cs",
-              "RelativeToolTip": "MartX.BL\\DTOs\\ProductDtos\\ProductGetDto.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:47:39.411Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
               "Title": "Trash.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Brand\\Trash.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Brand\\Trash.cshtml",
@@ -1150,7 +1106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 65,
               "Title": "Trash.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Department\\Trash.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Department\\Trash.cshtml",
@@ -1162,7 +1118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 66,
               "Title": "Trash.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Supplier\\Trash.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Supplier\\Trash.cshtml",
@@ -1174,7 +1130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 68,
               "Title": "SupplierGetDto.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\SupplierDtos\\SupplierGetDto.cs",
               "RelativeDocumentMoniker": "MartX.BL\\DTOs\\SupplierDtos\\SupplierGetDto.cs",
@@ -1186,7 +1142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 69,
               "Title": "EmployeeGetDto.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\EmployeeDtos\\EmployeeGetDto.cs",
               "RelativeDocumentMoniker": "MartX.BL\\DTOs\\EmployeeDtos\\EmployeeGetDto.cs",
@@ -1198,7 +1154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 70,
               "Title": "DepartmentPostDto.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\DepartmentDtos\\DepartmentPostDto.cs",
               "RelativeDocumentMoniker": "MartX.BL\\DTOs\\DepartmentDtos\\DepartmentPostDto.cs",
@@ -1210,7 +1166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 67,
               "Title": "Trash.cshtml",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\Views\\Category\\Trash.cshtml",
               "RelativeDocumentMoniker": "MartX.MVC\\Views\\Category\\Trash.cshtml",
@@ -1222,7 +1178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 71,
               "Title": "IDocumentImageUrlService.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\Services\\Abstractions\\IDocumentImageUrlService.cs",
               "RelativeDocumentMoniker": "MartX.BL\\Services\\Abstractions\\IDocumentImageUrlService.cs",
@@ -1234,7 +1190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 72,
               "Title": "BrandPutDto.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.BL\\DTOs\\BrandDtos\\BrandPutDto.cs",
               "RelativeDocumentMoniker": "MartX.BL\\DTOs\\BrandDtos\\BrandPutDto.cs",
@@ -1246,7 +1202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 73,
               "Title": "BrandWriteRepository.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.DAL\\Repositories\\Implementations\\Brand\\BrandWriteRepository.cs",
               "RelativeDocumentMoniker": "MartX.DAL\\Repositories\\Implementations\\Brand\\BrandWriteRepository.cs",
@@ -1258,7 +1214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 74,
               "Title": "BrandReadRepository.cs",
               "DocumentMoniker": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.DAL\\Repositories\\Implementations\\Brand\\BrandReadRepository.cs",
               "RelativeDocumentMoniker": "MartX.DAL\\Repositories\\Implementations\\Brand\\BrandReadRepository.cs",

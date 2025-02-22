@@ -78,14 +78,14 @@ public class ProductService : IProductService
 
     public async Task<ICollection<ProductGetDto>> GetAllProductAsync()
     {
-        ICollection<Product> productGets = await _productReadRepository.GetAllByCondition(p => !p.IsDeleted, true, "Brand", "Category").ToListAsync();
+        ICollection<Product> productGets = await _productReadRepository.GetAllByCondition(p => !p.IsDeleted, true).ToListAsync();
         ICollection<ProductGetDto> products = _mapper.Map<ICollection<ProductGetDto>>(productGets);
         return products;
     }
 
     public async Task<ICollection<ProductGetDto>> GetAllSoftDeletedProduct()
     {
-        ICollection<Product> products = await _productReadRepository.GetAllByCondition(p => p.IsDeleted, true, "Brand", "Category").ToListAsync();
+        ICollection<Product> products = await _productReadRepository.GetAllByCondition(p => p.IsDeleted, true).ToListAsync();
         ICollection<ProductGetDto> productGets = _mapper.Map<ICollection<ProductGetDto>>(products);
         return productGets;
     }
