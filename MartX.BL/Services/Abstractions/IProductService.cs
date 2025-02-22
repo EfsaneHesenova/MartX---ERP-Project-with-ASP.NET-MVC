@@ -17,6 +17,7 @@ public interface IProductService
     Task RestoreProductAsync(Guid id);
     Task UpdateProductAsync(ProductPutDto productPutDto);
     Task<ICollection<ProductGetDto>> GetAllSoftDeletedProduct();
+    Task<ICollection<ProductGetDto>> GetAllProduct(int size = 10, int page = 0);
     Task<ICollection<ProductGetDto>> GetAllProductAsync();
     Task<ProductGetDto> GetByIdProductAsync(Guid id);
 }

@@ -17,6 +17,7 @@ public interface ISupplierService
     Task RestoreSupplierAsync(Guid id);
     Task UpdateSupplierAsync(SupplierPutDto supplierPutDto);
     Task<ICollection<SupplierGetDto>> GetAllSoftDeletedSupplier();
+    Task<ICollection<SupplierGetDto>> GetAllSupplier(int size = 10, int page = 0);
     Task<ICollection<SupplierGetDto>> GetAllSupplierAsync();
     Task<SupplierGetDto> GetByIdSupplierAsync(Guid id);
     Task<ICollection<SelectListItem>> SelectAllSupplier();

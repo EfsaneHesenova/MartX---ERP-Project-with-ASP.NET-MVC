@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System.Drawing;
+using AutoMapper;
 using MartX.BL.DTOs.BrandDtos;
 using MartX.BL.DTOs.CategoryDtos;
 using MartX.BL.Services.Abstractions;
@@ -19,12 +20,22 @@ namespace MartX.MVC.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int size = 10, int page = 1)
         {
             try
             {
-                ICollection<CategoryGetDto> categorys = await _categoryService.GetAllCategoryAsync();
-                return View(categorys);
+                ViewBag.Size = size;
+                int currentPage = page - 1;
+
+                ICollection<CategoryGetDto> categories = await _categoryService.GetAllCategory(size, currentPage);
+                ICollection<CategoryGetDto> allCategories = await _categoryService.GetAllCategory();
+                int totalItems = allCategories.Count();
+                var totalPages = (int)Math.Ceiling((double)totalItems / size);
+
+                ViewBag.CurrentPage = page;
+                ViewBag.TotalPages = totalPages;
+
+                return View(categories);
             }
             catch (Exception ex)
             {
@@ -95,7 +106,7 @@ namespace MartX.MVC.Controllers
             try
             {
                 CategoryGetDto categoryGetDto = await _categoryService.GetByIdCategoryAsync(id);
-                return View(categoryGetDto);
+                return PartialView("_Detail", categoryGetDto);
             }
             catch (Exception ex)
             {

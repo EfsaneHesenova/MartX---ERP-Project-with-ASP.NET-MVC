@@ -1,6 +1,18 @@
 ﻿@model ICollection<ProductGetDto>
 @{
     int Number = 0;
+    int max = 0;
+    int min = (ViewBag.CurrentPage) >= 2 ? min = ViewBag.CurrentPage - 1 : min = 1;
+    if (ViewBag.CurrentPage != ViewBag.TotalPages && ViewBag.CurrentPage <= ViewBag.TotalPages - 1)
+    {
+        max = ViewBag.CurrentPage + 1;
+    }
+    else
+    {
+        max = ViewBag.TotalPages;
+        min = max - 2;
+    }
+    max = (ViewBag.CurrentPage == 1) ? max + 1 : max;
 }
 <div class="main-content">
     <div class="page-content">
@@ -27,12 +39,51 @@
                         <div class="card-header">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <h2 class="card-title">Index Product</h2>
+                                    <div class="d-flex justify-content-start" style="position:relative; top:5px;">
+                                        <nav aria-label="Page navigation">
+                                            <ul class="pagination">
+                                                <!-- Dinamik sayfa numaraları -->
+                                                @if (ViewBag.TotalPages > 2)
+                                                {
+                                                    @for (var i = min; i <= max; i++)
+                                                    {
+                                                        <li class="page-item @(ViewBag.CurrentPage == i ? "active" : "")">
+                                                            <a class="page-link" href="#" onclick="goToPage(@i)">@i</a>
+                                                        </li>
+                                                    }
+                                                }
+                                                else if (ViewBag.TotalPages == 2)
+                                                {
+                                                    <li class="page-item @(ViewBag.CurrentPage == 1 ? "active" : "")">
+                                                        <a class="page-link" href="#" onclick="goToPage(1)">1</a>
+                                                    </li>
+                                                    <li class="page-item @(ViewBag.CurrentPage == 2 ? "active" : "")">
+                                                        <a class="page-link" href="#" onclick="goToPage(2)">2</a>
+                                                    </li>
+                                                }
+                                            </ul>
+                                        </nav>
+                                    </div>
                                 </div>
                                 <div class="col-lg-6">
+                                    <div class="btn-group float-end me-2">
+                                        <button type="button" class="btn btn-lg btn-secondary btn-rounded dropdown-toggle"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa-solid fa-filter"></i>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <form id="sizeForm" method="get" action="/Product/Index">
+                                                <input type="hidden" name="size" id="sizeInput" value="@ViewBag.Size">
+                                                <button type="button" class="dropdown-item" onclick="setSizeAndSubmit(10);">10</button>
+                                                <button type="button" class="dropdown-item" onclick="setSizeAndSubmit(20);">20</button>
+                                                <button type="button" class="dropdown-item" onclick="setSizeAndSubmit(50);">50</button>
+                                                <button type="button" class="dropdown-item" onclick="setSizeAndSubmit(100);">100</button>
+                                            </form>
+                                        </div>
+                                    </div>
                                     <a asp-controller="Product"
                                        asp-action="Trash"
-                                       class="btn btn-lg btn-warning btn-rounded mr-1 waves-effect waves-light float-end">
+                                       class="btn btn-lg btn-warning btn-rounded mr-1 waves-effect waves-light me-2 float-end">
                                         <i class="fa-solid fa-trash"></i>
                                     </a>
                                     <a asp-controller="Product"
@@ -97,20 +148,23 @@
                                                         </div>
                                                     </td>
                                                     <td class="text-end">
-                                                        <a asp-controller="Product" asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary btn-rounded waves-effect waves-light mt-1 ms-2">
+                                                        <a asp-controller="Supplier" asp-action="Update" asp-route-id="@item.Id"
+                                                           class="btn btn-primary btn-rounded waves-effect waves-light">
                                                             <i class="fa-solid fa-pen"></i>
                                                         </a>
-                                                        <a asp-controller="Product" asp-action="SoftDelete" asp-route-id="@item.Id" class="btn btn-warning btn-rounded waves-effect waves-light mt-1 ms-2">
+                                                        <a asp-controller="Product" asp-action="SoftDelete" asp-route-id="@item.Id"
+                                                           class="btn btn-warning btn-rounded waves-effect waves-light">
                                                             <i class="fa-solid fa-rotate-right"></i>
                                                         </a>
-                                                        <a asp-controller="Product" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-rounded waves-effect waves-light mt-1 ms-2">
+                                                        <a asp-controller="Product" asp-action="Delete" asp-route-id="@item.Id"
+                                                           class="btn btn-danger btn-rounded waves-effect waves-light">
                                                             <i class="fa-solid fa-delete-left"></i>
                                                         </a>
-                                                        <a asp-controller="Product" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-info btn-rounded waves-effect waves-light mt-1 ms-2">
+                                                        <a href="javascript:void(0);" data-id="@item.Id"
+                                                           class="btn btn-info btn-rounded waves-effect waves-light btn-detail">
                                                             <i class="fa-solid fa-info"></i>
                                                         </a>
                                                     </td>
-
                                                 </tr>
 
                                             }
@@ -121,6 +175,15 @@
                         </div>
                     </div>
                     <!-- end card -->
+                    <!-- 📌 Modal (Category Detail) -->
+                    <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content" id="detailModalContent">
+                                <!-- AJAX ile içerik yüklenecek -->
+                            </div>
+                        </div>
+                    </div>
+
                 </div> <!-- end col -->
             </div> <!-- end row -->
         </div> <!-- container-fluid -->
@@ -142,5 +205,45 @@
         </div>
     </footer>
 </div>
+
+<!-- 📌 AJAX ile Modal İçeriğini Yükle -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(document).on("click", ".btn-detail", function () {
+            var productId = $(this).data("id");
+
+            $.ajax({
+                url: "/Product/Detail/" + productId,
+                type: "GET",
+                success: function (data) {
+                    $("#detailModalContent").html(data);
+                    $("#detailModal").modal("show");
+                },
+                error: function () {
+                    alert("Error loading category details.");
+                }
+            });
+        });
+    });
+</script>
+
+<script>
+    function setSizeAndSubmit(size) {
+        document.getElementById('sizeInput').value = size;
+        document.getElementById('sizeForm').submit();
+    }
+</script>
+
+<script>
+    function goToPage(page) {
+        if (page < 1 || page > @ViewBag.TotalPages) return;  // Sayfa aralığı dışına çıkma
+
+        var size = @ViewBag.Size;  // Size'ı ViewBag'den alıyoruz
+        var url = '/Product/Index?page=' + page + '&size=' + size;  // Sayfa ve size bilgilerini URL'ye ekle
+        window.location.href = url;  // Sayfayı yeni URL'ye yönlendir
+    }
+</script>
 
 

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
+using MartX.BL.DTOs.BrandDtos;
 using MartX.BL.DTOs.CategoryDtos;
 using MartX.BL.DTOs.DocumentImageUrlDtos;
 using MartX.BL.DTOs.EmployeeDtos;
@@ -66,6 +67,13 @@ public class ProductService : IProductService
         {
             throw new Exception("Something went wrong");
         }
+    }
+
+    public async Task<ICollection<ProductGetDto>> GetAllProduct(int size = 10, int page = 0)
+    {
+        ICollection<Product> products = await _productReadRepository.GetAllByCondition(p => !p.IsDeleted, page, size, true, "Brand", "Category").ToListAsync();
+        ICollection<ProductGetDto> productGets = _mapper.Map<ICollection<ProductGetDto>>(products);
+        return productGets;
     }
 
     public async Task<ICollection<ProductGetDto>> GetAllProductAsync()

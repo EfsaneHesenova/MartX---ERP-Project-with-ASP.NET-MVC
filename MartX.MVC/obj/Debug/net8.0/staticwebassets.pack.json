@@ -761,6 +761,10 @@
       "PackagePath": "staticwebassets\\assets\\libs\\wnumb\\wNumb.min.js"
     },
     {
+      "Id": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\01c706f7-43ec-4e31-976c-dd745ef5f750.jpg",
+      "PackagePath": "staticwebassets\\uploads\\01c706f7-43ec-4e31-976c-dd745ef5f750.jpg"
+    },
+    {
       "Id": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\0bfbee98-9f90-429d-960c-cf4919738cf5.jpg",
       "PackagePath": "staticwebassets\\uploads\\0bfbee98-9f90-429d-960c-cf4919738cf5.jpg"
     },
@@ -805,8 +809,16 @@
       "PackagePath": "staticwebassets\\uploads\\8396bb3b-8c89-4c4f-9e1f-6461fe06796f.jpg"
     },
     {
+      "Id": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\911b25e4-75a1-49eb-9e58-89387907657a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\911b25e4-75a1-49eb-9e58-89387907657a.jpg"
+    },
+    {
       "Id": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\939d3d15-dbba-4d5c-ba10-2d0028654014.jpg",
       "PackagePath": "staticwebassets\\uploads\\939d3d15-dbba-4d5c-ba10-2d0028654014.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\9676cd16-229b-434f-b0e8-942850f77fb8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\9676cd16-229b-434f-b0e8-942850f77fb8.jpg"
     },
     {
       "Id": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\9c081aa7-8291-41bc-b41a-8492eb28b03c.jpg",
@@ -815,6 +827,10 @@
     {
       "Id": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\9c57725a-5668-46d2-a7e4-65edde5b0e5a.jpg",
       "PackagePath": "staticwebassets\\uploads\\9c57725a-5668-46d2-a7e4-65edde5b0e5a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\a1cf3094-23d0-41c0-a95e-33bf2a5aeb29.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a1cf3094-23d0-41c0-a95e-33bf2a5aeb29.jpg"
     },
     {
       "Id": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\ae2c08b2-79b2-4d9f-8f22-a8739e397d1c.jpg",
@@ -835,6 +851,14 @@
     {
       "Id": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\c17bdf81-86dd-4556-989a-0b3f8562e5ee.jpg",
       "PackagePath": "staticwebassets\\uploads\\c17bdf81-86dd-4556-989a-0b3f8562e5ee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\c8f8f056-1c22-4c2f-b966-220b800a7ca6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\c8f8f056-1c22-4c2f-b966-220b800a7ca6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\de63ca43-aa18-48f0-9cd2-d386597b18c7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\de63ca43-aa18-48f0-9cd2-d386597b18c7.jpg"
     },
     {
       "Id": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\e92a5026-d0af-4540-8b41-80c36e763396.jpg",

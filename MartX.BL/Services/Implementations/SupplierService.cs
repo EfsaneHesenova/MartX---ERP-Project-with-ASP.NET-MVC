@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
+using MartX.BL.DTOs.BrandDtos;
 using MartX.BL.DTOs.ProductDtos;
 using MartX.BL.DTOs.SupplierDtos;
 using MartX.BL.ExternalServices.Abstractions;
@@ -66,6 +67,13 @@ public class SupplierService : ISupplierService
     public async Task<ICollection<SupplierGetDto>> GetAllSoftDeletedSupplier()
     {
         ICollection<Supplier> suppliers = await _supplierReadRepository.GetAllByCondition(p => p.IsDeleted, true).ToListAsync();
+        ICollection<SupplierGetDto> supplierGets = _mapper.Map<ICollection<SupplierGetDto>>(suppliers);
+        return supplierGets;
+    }
+
+    public async Task<ICollection<SupplierGetDto>> GetAllSupplier(int size = 10, int page = 0)
+    {
+        ICollection<Supplier> suppliers = await _supplierReadRepository.GetAllByCondition(p => !p.IsDeleted, page, size, true).ToListAsync();
         ICollection<SupplierGetDto> supplierGets = _mapper.Map<ICollection<SupplierGetDto>>(suppliers);
         return supplierGets;
     }

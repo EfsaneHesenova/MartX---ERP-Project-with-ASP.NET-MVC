@@ -1,4 +1,5 @@
-﻿using System.Drawing.Drawing2D;
+﻿using System.Collections;
+using System.Drawing.Drawing2D;
 using System.Numerics;
 using AutoMapper;
 using MartX.BL.DTOs.BrandDtos;
@@ -22,20 +23,32 @@ namespace MartX.MVC.Controllers
             _supplierService = supplierService;
             _brandService = brandService;
         }
+
+
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int size = 10, int page = 1)  
         {
             try
             {
-                ICollection<BrandGetDto> brands = await _brandService.GetAllBrand();
+                ViewBag.Size = size;
+                int currentPage = page - 1;
+
+                ICollection<BrandGetDto> brands = await _brandService.GetAllBrand(size, currentPage);
+                ICollection<BrandGetDto> allBrands = await _brandService.GetAllBrand(); 
+                int totalItems = allBrands.Count();
+                var totalPages = (int)Math.Ceiling((double)totalItems / size);  
+
+                ViewBag.CurrentPage = page;
+                ViewBag.TotalPages = totalPages;
+
                 return View(brands);
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
-          
         }
+
 
         [HttpGet]
         public async Task<IActionResult> Trash()

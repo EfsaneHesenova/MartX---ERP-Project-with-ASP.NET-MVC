@@ -17,6 +17,7 @@ public interface IEmployeeService
     Task RestoreEmployeeAsync(Guid id);
     Task UpdateEmployeeAsync(EmployeePutDto employeePutDto);
     Task<ICollection<EmployeeGetDto>> GetAllSoftDeletedEmployee();
+    Task<ICollection<EmployeeGetDto>> GetAllEmployee(int size = 10, int page = 0);
     Task<ICollection<EmployeeGetDto>> GetAllEmployeeAsync();
     Task<EmployeeGetDto> GetByIdEmployeeAsync(Guid id);
     Task<ICollection<SelectListItem>> SelectAllEmployee();

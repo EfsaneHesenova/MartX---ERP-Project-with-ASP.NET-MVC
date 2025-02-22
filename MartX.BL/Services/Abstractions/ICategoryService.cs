@@ -16,6 +16,7 @@ namespace MartX.BL.Services.Abstractions
         Task SoftDeleteCategoryAsync(Guid id);
         Task RestoreCategoryAsync(Guid id);
         Task UpdateCategoryAsync(CategoryPutDto categoryPutDto);
+        Task<ICollection<CategoryGetDto>> GetAllCategory(int size = 10, int page = 0);
         Task<ICollection<CategoryGetDto>> GetAllSoftDeletedCategory();
         Task<ICollection<CategoryGetDto>> GetAllCategoryAsync();
         Task<CategoryGetDto> GetByIdCategoryAsync(Guid id);

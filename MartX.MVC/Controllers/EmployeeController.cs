@@ -1,4 +1,7 @@
-﻿using AutoMapper;
+﻿using System.Drawing;
+using AutoMapper;
+using MartX.BL.DTOs.BrandDtos;
+using MartX.BL.DTOs.CategoryDtos;
 using MartX.BL.DTOs.DepartmentDtos;
 using MartX.BL.DTOs.EmployeeDtos;
 using MartX.BL.Services.Abstractions;
@@ -21,12 +24,22 @@ namespace MartX.MVC.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int size = 10, int page = 1)
         {
             try
             {
-                ICollection<EmployeeGetDto> documents = await _employeeService.GetAllEmployeeAsync();
-                return View(documents);
+                ViewBag.Size = size;
+                int currentPage = page - 1;
+
+                ICollection<EmployeeGetDto> employees = await _employeeService.GetAllEmployee(size, currentPage);
+                ICollection<EmployeeGetDto> allEmployees = await _employeeService.GetAllEmployee();
+                int totalItems = allEmployees.Count();
+                var totalPages = (int)Math.Ceiling((double)totalItems / size);
+
+                ViewBag.CurrentPage = page;
+                ViewBag.TotalPages = totalPages;
+
+                return View(employees);
             }
             catch (Exception ex)
             {
@@ -118,7 +131,7 @@ namespace MartX.MVC.Controllers
             {
 
                 EmployeeGetDto employeeGet = await _employeeService.GetByIdEmployeeAsync(id);
-                return View(employeeGet);
+                return PartialView("_Detail", employeeGet);
 
             }
             catch (Exception ex)

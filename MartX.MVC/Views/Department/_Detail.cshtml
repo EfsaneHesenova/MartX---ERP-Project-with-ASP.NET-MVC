@@ -1,0 +1,28 @@
+﻿@model DepartmentGetDto
+
+<div class="modal-header">
+    <h5 class="modal-title">@Model.Title</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    <p><strong>Description:</strong> @Model.Description</p>
+    <p><strong>Deleted Situation:</strong> @Model.IsDeleted</p>
+    <p><strong>Created Date:</strong> @Model.CreatedAt</p>
+    @if (Model.UpdatedAt != DateTime.Parse("1.01.0001 00:00:00"))
+    {
+        <p><strong>Updated Date:</strong> @Model.UpdatedAt</p>
+    }
+    @if (Model.DeletedAt != DateTime.Parse("1.01.0001 00:00:00"))
+    {
+        <p><strong>Deleted Date:</strong> @Model.DeletedAt</p>
+    }
+</div>
+<div class="modal-footer">
+    <a asp-controller="Department" asp-action="Update" asp-route-id="@Model.Id" class="btn btn-primary btn-rounded waves-effect waves-light">
+        <i class="fa-solid fa-pen"></i> Edit
+    </a>
+    <a asp-controller="Department" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger btn-rounded waves-effect waves-light">
+        <i class="fa-solid fa-trash"></i> Delete
+    </a>
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>

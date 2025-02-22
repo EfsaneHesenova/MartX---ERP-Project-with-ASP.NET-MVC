@@ -16,6 +16,7 @@ namespace MartX.BL.Services.Abstractions
         Task RestoreBrandAsync(Guid id);
         Task UpdateBrandAsync(BrandPutDto brandPutDto);
         Task<ICollection<BrandGetDto>> GetAllBrand();
+        Task<ICollection<BrandGetDto>> GetAllBrand(int size = 10, int page = 0);
         Task<ICollection<BrandGetDto>> GetAllSoftDeletedBrand();
         Task<BrandGetDto> GetByIdBrandAsync(Guid id);
         Task<ICollection<SelectListItem>> SelectAllBrand();

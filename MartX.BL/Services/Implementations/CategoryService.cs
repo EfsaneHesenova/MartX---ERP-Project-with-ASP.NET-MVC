@@ -65,6 +65,13 @@ public class CategoryService : ICategoryService
         }
     }
 
+    public async Task<ICollection<CategoryGetDto>> GetAllCategory(int size = 10, int page = 0)
+    {
+        ICollection<Category> categories= await _categoryReadRepository.GetAllByCondition(p => !p.IsDeleted, page, size, true).ToListAsync();
+        ICollection<CategoryGetDto> categoryGets = _mapper.Map<ICollection<CategoryGetDto>>(categories);
+        return categoryGets;
+    }
+
     public async Task<ICollection<CategoryGetDto>> GetAllCategoryAsync()
     {
         ICollection<Category> categoryGets = await _categoryReadRepository.GetAllByCondition(p => !p.IsDeleted, true).ToListAsync();

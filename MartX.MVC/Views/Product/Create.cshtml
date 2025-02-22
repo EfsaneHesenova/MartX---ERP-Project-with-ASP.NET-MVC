@@ -61,9 +61,12 @@
 
                                         </div>
                                         <div class="mb-3">
-                                            <label asp-for="Size" class="form-label">Size</label>
-                                            <input asp-for="Size" class="form-control" type="text" id="title-input">
-                                            <span asp-validation-for="Size" style="color: mediumpurple"></span>
+                                            <label asp-for="Size" class="form-label">Select Size</label>
+                                            <select asp-for="Size" class="form-select">
+                                                <option value="Small">Small</option>
+                                                <option value="Medium">Medium</option>
+                                                <option value="Large">Large</option>
+                                            </select>
                                         </div>
                                         <div class="mb-3">
                                             <label asp-for="StockQuantity" for="description-input" class="form-label">StockQuantity</label>
@@ -79,7 +82,7 @@
                                         </div>
                                         <div class="mb-3">
 
-                                            <label asp-for="BrandId" class="form-label">Select</label>
+                                            <label asp-for="BrandId" class="form-label">Select Brand</label>
                                             <select asp-for="BrandId" class="form-select">
                                                 <option>Select</option>
                                                 @foreach (var item in Model.Brands)
@@ -90,7 +93,7 @@
                                         </div>
                                         <div class="mb-3">
 
-                                            <label asp-for="CategoryId" class="form-label">Select</label>
+                                            <label asp-for="CategoryId" class="form-label">Select Category</label>
                                             <select asp-for="CategoryId" class="form-select">
                                                 <option>Select</option>
                                                 @foreach (var item in Model.Categories)

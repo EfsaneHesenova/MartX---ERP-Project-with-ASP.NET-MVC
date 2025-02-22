@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.EntityFrameworkCore;
 using MartX.BL.DTOs.DocumentImageUrlDtos;
+using System.Drawing;
 
 namespace MartX.BL.Services.Implementations
 {
@@ -67,9 +68,16 @@ namespace MartX.BL.Services.Implementations
             }
         }
 
+        public async Task<ICollection<BrandGetDto>> GetAllBrand(int size = 10, int page = 0)
+        {
+            ICollection<Brand> brandGets= await _brandReadRepository.GetAllByCondition(p => !p.IsDeleted,page, size ,true, "Supplier").ToListAsync();
+            ICollection<BrandGetDto> brands = _mapper.Map<ICollection<BrandGetDto>>(brandGets);
+            return brands;
+        }
+
         public async Task<ICollection<BrandGetDto>> GetAllBrand()
         {
-            ICollection<Brand> brandGets= await _brandReadRepository.GetAllByCondition(p => !p.IsDeleted,true, "Supplier").ToListAsync();
+            ICollection<Brand> brandGets = await _brandReadRepository.GetAllByCondition(p => !p.IsDeleted, true, "Supplier").ToListAsync();
             ICollection<BrandGetDto> brands = _mapper.Map<ICollection<BrandGetDto>>(brandGets);
             return brands;
         }

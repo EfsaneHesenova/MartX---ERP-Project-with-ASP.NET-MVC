@@ -1,8 +1,19 @@
 ﻿@model ICollection<BrandGetDto>
 @{
     int Number = 0;
+    int max = 0;
+    int min = (ViewBag.CurrentPage) >= 2 ? min = ViewBag.CurrentPage - 1 : min = 1;
+    if (ViewBag.CurrentPage != ViewBag.TotalPages && ViewBag.CurrentPage <= ViewBag.TotalPages - 1) 
+    {
+        max = ViewBag.CurrentPage + 1;
+    }
+    else
+    {
+        max = ViewBag.TotalPages;
+        min = max - 2;
+    }
+    max = (ViewBag.CurrentPage == 1) ? max + 1 : max;
 }
-
 <div class="main-content">
     <div class="page-content">
         <div class="container-fluid">
@@ -28,10 +39,49 @@
                         <div class="card-header">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <h2 class="card-title">Index Brand</h2>
+                                    <div class="d-flex justify-content-start" style="position:relative; top:5px;">
+                                        <nav aria-label="Page navigation">
+                                            <ul class="pagination">
+                                                <!-- Dinamik sayfa numaraları -->
+                                                @if(ViewBag.TotalPages > 2)
+                                                {
+                                                    @for (var i = min; i <= max; i++)
+                                                    {
+                                                        <li class="page-item @(ViewBag.CurrentPage == i ? "active" : "")">
+                                                            <a class="page-link" href="#" onclick="goToPage(@i)">@i</a>
+                                                        </li>
+                                                    }
+                                                }
+                                                else if(ViewBag.TotalPages == 2)
+                                                {
+                                                    <li class="page-item @(ViewBag.CurrentPage == 1 ? "active" : "")">
+                                                        <a class="page-link" href="#" onclick="goToPage(1)">1</a>
+                                                    </li>
+                                                    <li class="page-item @(ViewBag.CurrentPage == 2 ? "active" : "")">
+                                                        <a class="page-link" href="#" onclick="goToPage(2)">2</a>
+                                                    </li>
+                                                }
+                                            </ul>
+                                        </nav>
+                                    </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <a asp-controller="Brand" asp-action="Trash" class="btn btn-lg btn-warning btn-rounded float-end">
+                                    <div class="btn-group float-end me-2">
+                                        <button type="button" class="btn btn-lg btn-secondary btn-rounded dropdown-toggle"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa-solid fa-filter"></i>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <form id="sizeForm" method="get" action="/Brand/Index">
+                                                <input type="hidden" name="size" id="sizeInput" value="@ViewBag.Size">
+                                                <button type="button" class="dropdown-item" onclick="setSizeAndSubmit(2);">2</button>
+                                                <button type="button" class="dropdown-item" onclick="setSizeAndSubmit(20);">20</button>
+                                                <button type="button" class="dropdown-item" onclick="setSizeAndSubmit(50);">50</button>
+                                                <button type="button" class="dropdown-item" onclick="setSizeAndSubmit(100);">100</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <a asp-controller="Brand" asp-action="Trash" class="btn btn-lg btn-warning btn-rounded float-end me-2">
                                         <i class="fa-solid fa-trash"></i>
                                     </a>
                                     <a asp-controller="Brand" asp-action="Create" class="btn btn-lg btn-success btn-rounded float-end me-2">
@@ -159,3 +209,19 @@
     });
 </script>
 
+<script>
+    function setSizeAndSubmit(size) {
+        document.getElementById('sizeInput').value = size;
+        document.getElementById('sizeForm').submit();
+    }
+</script>
+
+<script>
+    function goToPage(page) {
+        if (page < 1 || page > @ViewBag.TotalPages) return;  // Sayfa aralığı dışına çıkma
+
+        var size = @ViewBag.Size;  // Size'ı ViewBag'den alıyoruz
+        var url = '/Brand/Index?page=' + page + '&size=' + size;  // Sayfa ve size bilgilerini URL'ye ekle
+        window.location.href = url;  // Sayfayı yeni URL'ye yönlendir
+    }
+</script>

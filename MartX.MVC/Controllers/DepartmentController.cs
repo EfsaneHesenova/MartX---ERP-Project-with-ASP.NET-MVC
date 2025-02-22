@@ -1,4 +1,6 @@
-﻿using AutoMapper;
+﻿using System.Drawing;
+using AutoMapper;
+using MartX.BL.DTOs.BrandDtos;
 using MartX.BL.DTOs.CategoryDtos;
 using MartX.BL.DTOs.DepartmentDtos;
 using MartX.BL.Services.Abstractions;
@@ -19,11 +21,21 @@ namespace MartX.MVC.Controllers
             _departmentService = departmentService;
         }
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int size = 10, int page = 1)
         {
             try
             {
-                ICollection<DepartmentGetDto> departments = await _departmentService.GetAllDepartmentAsync();
+                ViewBag.Size = size;
+                int currentPage = page - 1;
+
+                ICollection<DepartmentGetDto> departments = await _departmentService.GetAllDepartment(size, currentPage);
+                ICollection<DepartmentGetDto> allDepartments = await _departmentService.GetAllDepartment();
+                int totalItems = allDepartments.Count();
+                var totalPages = (int)Math.Ceiling((double)totalItems / size);
+
+                ViewBag.CurrentPage = page;
+                ViewBag.TotalPages = totalPages;
+
                 return View(departments);
             }
             catch (Exception ex)
@@ -95,7 +107,7 @@ namespace MartX.MVC.Controllers
             try
             {
                 DepartmentGetDto departmentGetDto = await _departmentService.GetByIdDepartmentAsync(id);
-                return View(departmentGetDto);
+                return PartialView("_Detail", departmentGetDto);
             }
             catch (Exception ex)
             {

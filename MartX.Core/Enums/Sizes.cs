@@ -8,7 +8,7 @@ namespace MartX.Core.Enums;
 
 public enum Sizes
 {
-    Small,
+    Small = 1,
     Medium,
     Large
 }

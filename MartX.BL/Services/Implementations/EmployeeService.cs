@@ -68,6 +68,13 @@ public class EmployeeService : IEmployeeService
         }
     }
 
+    public async Task<ICollection<EmployeeGetDto>> GetAllEmployee(int size = 10, int page = 0)
+    {
+        ICollection<Employee> employees = await _employeeReadRepository.GetAllByCondition(p => !p.IsDeleted, page, size, true, "Department").ToListAsync();
+        ICollection<EmployeeGetDto> employeeGets = _mapper.Map<ICollection<EmployeeGetDto>>(employees);
+        return employeeGets;
+    }
+
     public async Task<ICollection<EmployeeGetDto>> GetAllEmployeeAsync()
     {
         ICollection<Employee> employeeGets = await _employeeReadRepository.GetAllByCondition(x => !x.IsDeleted, true, "Department").ToListAsync();

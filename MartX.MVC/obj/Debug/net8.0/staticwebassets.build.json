@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hKdEt3e39jEky27AUi6P9zBlEeT38hy5kf5kFLGdhPA=",
+  "Hash": "xq1pVU98ZQpnh+K3P8gecFs28cpavEYznSvXad22vso=",
   "Source": "MartX.MVC",
   "BasePath": "_content/MartX.MVC",
   "Mode": "Default",
@@ -1711,8 +1711,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "k4d2xvs1mm",
-      "Integrity": "9EtryfFnsqQehcry71B1nQ77SRsrtHFkkoDWoVkgwxQ=",
+      "Fingerprint": "pgxz66361l",
+      "Integrity": "1x21E2XkchLrocF7XM05Z7K/6r1tgCVWVU8wrLE7Hbo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\pages\\dashboard.init.js"
@@ -4007,6 +4007,27 @@
       "OriginalItemSpec": "wwwroot\\assets\\libs\\wnumb\\wNumb.min.js"
     },
     {
+      "Identity": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\01c706f7-43ec-4e31-976c-dd745ef5f750.jpg",
+      "SourceId": "MartX.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\",
+      "BasePath": "_content/MartX.MVC",
+      "RelativePath": "uploads/01c706f7-43ec-4e31-976c-dd745ef5f750#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "98ao872l16",
+      "Integrity": "yS1L7emUVbAz2ZX3nOgP1GW2P7PaKy7vIEURORyNU3c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\01c706f7-43ec-4e31-976c-dd745ef5f750.jpg"
+    },
+    {
       "Identity": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\0bfbee98-9f90-429d-960c-cf4919738cf5.jpg",
       "SourceId": "MartX.MVC",
       "SourceType": "Discovered",
@@ -4238,6 +4259,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\8396bb3b-8c89-4c4f-9e1f-6461fe06796f.jpg"
     },
     {
+      "Identity": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\911b25e4-75a1-49eb-9e58-89387907657a.jpg",
+      "SourceId": "MartX.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\",
+      "BasePath": "_content/MartX.MVC",
+      "RelativePath": "uploads/911b25e4-75a1-49eb-9e58-89387907657a#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fymjyxhlxi",
+      "Integrity": "CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\911b25e4-75a1-49eb-9e58-89387907657a.jpg"
+    },
+    {
       "Identity": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\939d3d15-dbba-4d5c-ba10-2d0028654014.jpg",
       "SourceId": "MartX.MVC",
       "SourceType": "Discovered",
@@ -4257,6 +4299,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\939d3d15-dbba-4d5c-ba10-2d0028654014.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\9676cd16-229b-434f-b0e8-942850f77fb8.jpg",
+      "SourceId": "MartX.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\",
+      "BasePath": "_content/MartX.MVC",
+      "RelativePath": "uploads/9676cd16-229b-434f-b0e8-942850f77fb8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fymjyxhlxi",
+      "Integrity": "CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\9676cd16-229b-434f-b0e8-942850f77fb8.jpg"
     },
     {
       "Identity": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\9c081aa7-8291-41bc-b41a-8492eb28b03c.jpg",
@@ -4299,6 +4362,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\9c57725a-5668-46d2-a7e4-65edde5b0e5a.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\a1cf3094-23d0-41c0-a95e-33bf2a5aeb29.jpg",
+      "SourceId": "MartX.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\",
+      "BasePath": "_content/MartX.MVC",
+      "RelativePath": "uploads/a1cf3094-23d0-41c0-a95e-33bf2a5aeb29#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "98ao872l16",
+      "Integrity": "yS1L7emUVbAz2ZX3nOgP1GW2P7PaKy7vIEURORyNU3c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\a1cf3094-23d0-41c0-a95e-33bf2a5aeb29.jpg"
     },
     {
       "Identity": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\ae2c08b2-79b2-4d9f-8f22-a8739e397d1c.jpg",
@@ -4404,6 +4488,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\c17bdf81-86dd-4556-989a-0b3f8562e5ee.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\c8f8f056-1c22-4c2f-b966-220b800a7ca6.jpg",
+      "SourceId": "MartX.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\",
+      "BasePath": "_content/MartX.MVC",
+      "RelativePath": "uploads/c8f8f056-1c22-4c2f-b966-220b800a7ca6#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fymjyxhlxi",
+      "Integrity": "CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\c8f8f056-1c22-4c2f-b966-220b800a7ca6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\de63ca43-aa18-48f0-9cd2-d386597b18c7.jpg",
+      "SourceId": "MartX.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\",
+      "BasePath": "_content/MartX.MVC",
+      "RelativePath": "uploads/de63ca43-aa18-48f0-9cd2-d386597b18c7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fymjyxhlxi",
+      "Integrity": "CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\de63ca43-aa18-48f0-9cd2-d386597b18c7.jpg"
     },
     {
       "Identity": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\e92a5026-d0af-4540-8b41-80c36e763396.jpg",
@@ -11083,7 +11209,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4181"
+          "Value": "5588"
         },
         {
           "Name": "Content-Type",
@@ -11091,11 +11217,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9EtryfFnsqQehcry71B1nQ77SRsrtHFkkoDWoVkgwxQ=\""
+          "Value": "\"1x21E2XkchLrocF7XM05Z7K/6r1tgCVWVU8wrLE7Hbo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Oct 2024 11:45:01 GMT"
+          "Value": "Thu, 20 Feb 2025 16:45:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11105,12 +11231,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9EtryfFnsqQehcry71B1nQ77SRsrtHFkkoDWoVkgwxQ="
+          "Value": "sha256-1x21E2XkchLrocF7XM05Z7K/6r1tgCVWVU8wrLE7Hbo="
         }
       ]
     },
     {
-      "Route": "assets/js/pages/dashboard.init.k4d2xvs1mm.js",
+      "Route": "assets/js/pages/dashboard.init.pgxz66361l.js",
       "AssetFile": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\assets\\js\\pages\\dashboard.init.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -11120,7 +11246,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4181"
+          "Value": "5588"
         },
         {
           "Name": "Content-Type",
@@ -11128,11 +11254,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9EtryfFnsqQehcry71B1nQ77SRsrtHFkkoDWoVkgwxQ=\""
+          "Value": "\"1x21E2XkchLrocF7XM05Z7K/6r1tgCVWVU8wrLE7Hbo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Oct 2024 11:45:01 GMT"
+          "Value": "Thu, 20 Feb 2025 16:45:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11142,7 +11268,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "k4d2xvs1mm"
+          "Value": "pgxz66361l"
         },
         {
           "Name": "label",
@@ -11150,7 +11276,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-9EtryfFnsqQehcry71B1nQ77SRsrtHFkkoDWoVkgwxQ="
+          "Value": "sha256-1x21E2XkchLrocF7XM05Z7K/6r1tgCVWVU8wrLE7Hbo="
         }
       ]
     },
@@ -20093,6 +20219,88 @@
       ]
     },
     {
+      "Route": "uploads/01c706f7-43ec-4e31-976c-dd745ef5f750.98ao872l16.jpg",
+      "AssetFile": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\01c706f7-43ec-4e31-976c-dd745ef5f750.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "213497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yS1L7emUVbAz2ZX3nOgP1GW2P7PaKy7vIEURORyNU3c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 17:01:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "98ao872l16"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/01c706f7-43ec-4e31-976c-dd745ef5f750.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yS1L7emUVbAz2ZX3nOgP1GW2P7PaKy7vIEURORyNU3c="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/01c706f7-43ec-4e31-976c-dd745ef5f750.jpg",
+      "AssetFile": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\01c706f7-43ec-4e31-976c-dd745ef5f750.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "213497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yS1L7emUVbAz2ZX3nOgP1GW2P7PaKy7vIEURORyNU3c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 17:01:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yS1L7emUVbAz2ZX3nOgP1GW2P7PaKy7vIEURORyNU3c="
+        }
+      ]
+    },
+    {
       "Route": "uploads/0bfbee98-9f90-429d-960c-cf4919738cf5.98ao872l16.jpg",
       "AssetFile": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\0bfbee98-9f90-429d-960c-cf4919738cf5.jpg",
       "Selectors": [],
@@ -20995,6 +21203,88 @@
       ]
     },
     {
+      "Route": "uploads/911b25e4-75a1-49eb-9e58-89387907657a.fymjyxhlxi.jpg",
+      "AssetFile": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\911b25e4-75a1-49eb-9e58-89387907657a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 17:01:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fymjyxhlxi"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/911b25e4-75a1-49eb-9e58-89387907657a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/911b25e4-75a1-49eb-9e58-89387907657a.jpg",
+      "AssetFile": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\911b25e4-75a1-49eb-9e58-89387907657a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 17:01:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4="
+        }
+      ]
+    },
+    {
       "Route": "uploads/939d3d15-dbba-4d5c-ba10-2d0028654014.fymjyxhlxi.jpg",
       "AssetFile": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\939d3d15-dbba-4d5c-ba10-2d0028654014.jpg",
       "Selectors": [],
@@ -21063,6 +21353,88 @@
         {
           "Name": "Last-Modified",
           "Value": "Sat, 15 Feb 2025 11:46:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9676cd16-229b-434f-b0e8-942850f77fb8.fymjyxhlxi.jpg",
+      "AssetFile": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\9676cd16-229b-434f-b0e8-942850f77fb8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 14:53:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fymjyxhlxi"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/9676cd16-229b-434f-b0e8-942850f77fb8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9676cd16-229b-434f-b0e8-942850f77fb8.jpg",
+      "AssetFile": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\9676cd16-229b-434f-b0e8-942850f77fb8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 14:53:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21237,6 +21609,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a1cf3094-23d0-41c0-a95e-33bf2a5aeb29.98ao872l16.jpg",
+      "AssetFile": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\a1cf3094-23d0-41c0-a95e-33bf2a5aeb29.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "213497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yS1L7emUVbAz2ZX3nOgP1GW2P7PaKy7vIEURORyNU3c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 20:36:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "98ao872l16"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/a1cf3094-23d0-41c0-a95e-33bf2a5aeb29.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yS1L7emUVbAz2ZX3nOgP1GW2P7PaKy7vIEURORyNU3c="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a1cf3094-23d0-41c0-a95e-33bf2a5aeb29.jpg",
+      "AssetFile": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\a1cf3094-23d0-41c0-a95e-33bf2a5aeb29.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "213497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yS1L7emUVbAz2ZX3nOgP1GW2P7PaKy7vIEURORyNU3c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 20:36:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yS1L7emUVbAz2ZX3nOgP1GW2P7PaKy7vIEURORyNU3c="
         }
       ]
     },
@@ -21647,6 +22101,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-yS1L7emUVbAz2ZX3nOgP1GW2P7PaKy7vIEURORyNU3c="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/c8f8f056-1c22-4c2f-b966-220b800a7ca6.fymjyxhlxi.jpg",
+      "AssetFile": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\c8f8f056-1c22-4c2f-b966-220b800a7ca6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 14:49:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fymjyxhlxi"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/c8f8f056-1c22-4c2f-b966-220b800a7ca6.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/c8f8f056-1c22-4c2f-b966-220b800a7ca6.jpg",
+      "AssetFile": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\c8f8f056-1c22-4c2f-b966-220b800a7ca6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 14:49:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/de63ca43-aa18-48f0-9cd2-d386597b18c7.fymjyxhlxi.jpg",
+      "AssetFile": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\de63ca43-aa18-48f0-9cd2-d386597b18c7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 17:01:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fymjyxhlxi"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/de63ca43-aa18-48f0-9cd2-d386597b18c7.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/de63ca43-aa18-48f0-9cd2-d386597b18c7.jpg",
+      "AssetFile": "C:\\Users\\hesen\\Desktop\\MartxApp\\MartXApplication\\MartX.MVC\\wwwroot\\uploads\\de63ca43-aa18-48f0-9cd2-d386597b18c7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 17:01:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CS83+o25j8eLs+qfdvhNfThfWUZ/cKha+7FIEH2FTS4="
         }
       ]
     },

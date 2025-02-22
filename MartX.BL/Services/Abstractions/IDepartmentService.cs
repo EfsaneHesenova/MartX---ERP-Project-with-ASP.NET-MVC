@@ -16,6 +16,7 @@ namespace MartX.BL.Services.Abstractions
         Task SoftDeleteDepartmentAsync(Guid id);
         Task RestoreDepartmentAsync(Guid id);
         Task<ICollection<DepartmentGetDto>> GetAllSoftDeletedDepartment();
+        Task<ICollection<DepartmentGetDto>> GetAllDepartment(int size = 10, int page = 0);
         Task UpdateDepartmentAsync(DepartmentPutDto departmentPutDto);
         Task<ICollection<DepartmentGetDto>> GetAllDepartmentAsync();
         Task<DepartmentGetDto> GetByIdDepartmentAsync(Guid id);

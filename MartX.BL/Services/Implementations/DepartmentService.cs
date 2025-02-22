@@ -66,6 +66,13 @@ public class DepartmentService : IDepartmentService
         }
     }
 
+    public async Task<ICollection<DepartmentGetDto>> GetAllDepartment(int size = 10, int page = 0)
+    {
+        ICollection<Department> departments = await _departmentReadRepository.GetAllByCondition(p => !p.IsDeleted, page, size, true).ToListAsync();
+        ICollection<DepartmentGetDto> departmentGets = _mapper.Map<ICollection<DepartmentGetDto>>(departments);
+        return departmentGets;
+    }
+
     public async Task<ICollection<DepartmentGetDto>> GetAllDepartmentAsync()
     {
         ICollection<Department> departmentGets = await _departmentReadRepository.GetAllByCondition(p => !p.IsDeleted, true).ToListAsync();
