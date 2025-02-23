@@ -7,11 +7,13 @@ using MartX.BL.DTOs.ProductDtos;
 using MartX.BL.Services.Abstractions;
 using MartX.Core.Models;
 using MartX.DAL.Contexts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 namespace MartX.MVC.Controllers
 {
+    [Authorize(Roles = "Admin, Boss, Adminstrator, Cashier")]
     public class CheckoutController : Controller
     {
         private readonly AppDbContext _context;

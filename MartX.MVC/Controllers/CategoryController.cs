@@ -4,10 +4,13 @@ using MartX.BL.DTOs.BrandDtos;
 using MartX.BL.DTOs.CategoryDtos;
 using MartX.BL.Services.Abstractions;
 using MartX.BL.Services.Implementations;
+using MartX.Core.Enums;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MartX.MVC.Controllers
 {
+    [Authorize(Roles = "Admin, Boss, Adminstrator, Worker")]
     public class CategoryController : Controller
     {
         private readonly ICategoryService _categoryService;
@@ -143,6 +146,7 @@ namespace MartX.MVC.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin, Boss, Adminstrator")]
         public async Task<IActionResult> Delete(Guid id)
         {
             try

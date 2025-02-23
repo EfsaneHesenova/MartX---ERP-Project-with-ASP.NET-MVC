@@ -6,10 +6,12 @@ using MartX.BL.DTOs.DepartmentDtos;
 using MartX.BL.Services.Abstractions;
 using MartX.BL.Services.Implementations;
 using MartX.Core.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MartX.MVC.Controllers
 {
+    [Authorize(Roles = "Admin, Boss, Adminstrator, Worker")]
     public class DepartmentController : Controller
     {
         private readonly IDepartmentService _departmentService;
@@ -144,6 +146,7 @@ namespace MartX.MVC.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin, Boss, Adminstrator")]
         public async Task<IActionResult> Delete(Guid id)
         {
             try

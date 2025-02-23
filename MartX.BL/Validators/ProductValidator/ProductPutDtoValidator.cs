@@ -14,11 +14,11 @@ public class ProductPutDtoValidator : AbstractValidator<ProductPutDto>
     {
         RuleFor(x => x.Title)
               .NotEmpty().NotNull().WithMessage("Title is required")
-              .Length(8, 25).WithMessage("min 8, max 25");
+              .Length(3, 30).WithMessage("min 3, max 30");
 
         RuleFor(x => x.Description)
         .NotEmpty().NotNull().WithMessage("Description is required")
-        .Length(8, 25).WithMessage("min 8, max 25");
+        .Length(8, 100).WithMessage("min 8, max 100");
 
         RuleFor(x => x.SalePrice)
         .NotEmpty().NotNull().WithMessage("SalePrice is required");

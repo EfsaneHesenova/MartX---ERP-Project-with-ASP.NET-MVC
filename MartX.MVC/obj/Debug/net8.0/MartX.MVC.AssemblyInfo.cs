@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MartX.MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0114ee2d691b0cc1bc4d30239df78f40f1189d31")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45975bcb281554c73fb4a6f4a28853d8429cb52f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MartX.MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MartX.MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

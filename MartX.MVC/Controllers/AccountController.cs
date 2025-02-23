@@ -1,5 +1,6 @@
 ﻿using MartX.BL.DTOs.AccountDtos;
 using MartX.BL.Services.Abstractions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MartX.MVC.Controllers
@@ -37,11 +38,13 @@ namespace MartX.MVC.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin, Boss, Adminstrator")]
         public IActionResult Register()
         {
             return View();
         }
         [HttpPost]
+        [Authorize(Roles = "Admin, Boss, Adminstrator")]
         public async Task<IActionResult> Register(RegisterDto registerDto)
         {
             if (!ModelState.IsValid)

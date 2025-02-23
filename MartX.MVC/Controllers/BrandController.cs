@@ -6,11 +6,14 @@ using MartX.BL.DTOs.BrandDtos;
 using MartX.BL.DTOs.SupplierDtos;
 using MartX.BL.Services.Abstractions;
 using MartX.BL.Services.Implementations;
+using MartX.Core.Enums;
 using MartX.Core.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MartX.MVC.Controllers
 {
+    [Authorize(Roles = "Admin, Boss, Adminstrator, Worker")]
     public class BrandController : Controller
     {
         private readonly IBrandService _brandService;
@@ -190,6 +193,7 @@ namespace MartX.MVC.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin, Boss, Adminstrator")]
         public async Task<IActionResult> Delete(Guid id)
         {
             try

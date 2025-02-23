@@ -15,11 +15,11 @@ public class SupplierPutDtoValidator : AbstractValidator<SupplierPutDto>
     {
         RuleFor(x => x.Name)
               .NotEmpty().NotNull().WithMessage("Name is required")
-              .Length(3, 20).WithMessage("Name min character is 3 and max character is 20 ");
+              .Length(3, 30).WithMessage("Name min character is 3 and max character is 30 ");
 
         RuleFor(x => x.Address)
                 .NotEmpty().NotNull().WithMessage("Address is required")
-                .Length(3, 20).WithMessage("Address min character is 3 and max character is 20 ");
+                .Length(3, 50).WithMessage("Address min character is 3 and max character is 50 ");
 
         RuleFor(x => x.Email)
              .NotEmpty().NotNull().WithMessage("Email is required")
@@ -27,7 +27,7 @@ public class SupplierPutDtoValidator : AbstractValidator<SupplierPutDto>
 
         RuleFor(x => x.ContactPerson)
                .NotEmpty().NotNull().WithMessage("ContactPerson is required")
-               .Length(3, 20).WithMessage("ContactPerson min character is 3 and max character is 20 ");
+               .Length(3, 30).WithMessage("ContactPerson min character is 3 and max character is 30 ");
 
         RuleFor(x => x.PhoneNumber)
             .NotEmpty().WithMessage("Phone number cannot be empty.")

@@ -5,10 +5,12 @@ using MartX.BL.DTOs.ProductDtos;
 using MartX.BL.DTOs.SupplierDtos;
 using MartX.BL.Services.Abstractions;
 using MartX.BL.Services.Implementations;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MartX.MVC.Controllers
 {
+    [Authorize(Roles = "Admin, Boss, Adminstrator, Worker")]
     public class SupplierController : Controller
     {
         private readonly ISupplierService _supplierService;
@@ -115,6 +117,7 @@ namespace MartX.MVC.Controllers
             }
         }
         [HttpGet]
+        [Authorize(Roles = "Admin, Boss, Adminstrator")]
         public async Task<IActionResult> Delete(Guid id)
         {
             try

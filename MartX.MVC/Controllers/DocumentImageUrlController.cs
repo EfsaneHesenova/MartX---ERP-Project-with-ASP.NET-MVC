@@ -5,10 +5,12 @@ using MartX.BL.DTOs.EmployeeDtos;
 using MartX.BL.Services.Abstractions;
 using MartX.BL.Services.Implementations;
 using MartX.Core.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MartX.MVC.Controllers
 {
+    [Authorize(Roles = "Admin, Boss, Adminstrator, Worker")]
     public class DocumentImageUrlController : Controller
     {
         private readonly IDocumentImageUrlService _documentImageUrlService;
@@ -162,6 +164,7 @@ namespace MartX.MVC.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin, Boss, Adminstrator")]
         public async Task<IActionResult> Delete(Guid id)
         {
             try

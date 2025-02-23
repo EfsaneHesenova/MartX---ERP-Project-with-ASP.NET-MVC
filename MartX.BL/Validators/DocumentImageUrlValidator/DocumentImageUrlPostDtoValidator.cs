@@ -14,6 +14,6 @@ public class DocumentImageUrlPostDtoValidator : AbstractValidator<DocumentImageU
     {
         RuleFor(x => x.Title)
                 .NotEmpty().NotNull().WithMessage("Title is required")
-                .Length(8, 25).WithMessage("min 8, max 25");
+                .Length(3, 30).WithMessage("min 3, max 30");
     }
 }

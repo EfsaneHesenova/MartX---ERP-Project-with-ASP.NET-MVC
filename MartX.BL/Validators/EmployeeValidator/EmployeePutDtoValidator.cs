@@ -20,7 +20,7 @@ public class EmployeePutDtoValidator : AbstractValidator<EmployeePutDto>
 
         RuleFor(x => x.Address)
                 .NotEmpty().NotNull().WithMessage("Address is required")
-                .Length(3, 20).WithMessage("Address min character is 3 and max character is 20 ");
+                .Length(3, 50).WithMessage("Address min character is 3 and max character is 50 ");
 
         RuleFor(x => x.Email)
              .NotEmpty().NotNull().WithMessage("Email is required")
@@ -34,11 +34,11 @@ public class EmployeePutDtoValidator : AbstractValidator<EmployeePutDto>
 
         RuleFor(x => x.LastName)
                 .NotEmpty().NotNull().WithMessage("LastName is required")
-                .Length(3, 20).WithMessage("LastName min character is 3 and max character is 20 ");
+                .Length(3, 30).WithMessage("LastName min character is 3 and max character is 30 ");
 
         RuleFor(x => x.FirstName)
                 .NotEmpty().NotNull().WithMessage("FirstName is required")
-                .Length(3, 20).WithMessage("FirstName min character is 3 and max character is 20 ");
+                .Length(3, 30).WithMessage("FirstName min character is 3 and max character is 30 ");
 
         RuleFor(x => x.Age)
                 .NotEmpty().NotNull().WithMessage("StockQuantity is required");

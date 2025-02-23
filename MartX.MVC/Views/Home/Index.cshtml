@@ -1,6 +1,29 @@
 ﻿<!-- ============================================================== -->
 <!-- Start right Content here -->
 <!-- ============================================================== -->
+<head>  
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .currency-table {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        thead {
+            background-color: #6f42c1;
+            color: white;
+        }
+
+        tbody tr:hover {
+            background-color: #f3e5f5;
+        }
+    </style>
+</head>
+
 <div class="main-content">
 
     <div class="page-content">
@@ -122,52 +145,48 @@
                     </div><!-- end card -->
                 </div><!-- end col -->
             </div><!-- end row-->
-            <div class="row" style="position: relative; left: 367px;">
-                <div class="col-xl-5">
-                    <!-- card -->
-                    <div class="card card-h-100">
-                        <!-- card body -->
-                        <div class="card-body">
-                            <div class="d-flex flex-wrap align-items-center mb-4">
-                                <h5 class="card-title me-2">Wallet Balance</h5>
-                                <div class="ms-auto">
-                                    <div>
-                                        <button type="button" class="btn btn-soft-secondary btn-sm">ALL</button>
-                                        <button type="button" class="btn btn-soft-primary btn-sm">1M</button>
-                                        <button type="button" class="btn btn-soft-secondary btn-sm">6M</button>
-                                        <button type="button" class="btn btn-soft-secondary btn-sm">1Y</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row align-items-center">
-                                <div class="col-sm">
-                                    <div id="wallet-balance" data-colors='["#777aca", "#5156be", "#a8aada"]' class="apex-charts"></div>
-                                </div>
-                                <div class="col-sm align-self-center">
-                                    <div class="mt-4 mt-sm-0">
-                                        <div>
-                                            <p class="mb-2"><i class="mdi mdi-circle align-middle font-size-10 me-2 text-success"></i> Bitcoin</p>
-                                            <h6>0.4412 BTC = <span class="text-muted font-size-14 fw-normal">$ 4025.32</span></h6>
-                                        </div>
-                                        <div class="mt-4 pt-2">
-                                            <p class="mb-2"><i class="mdi mdi-circle align-middle font-size-10 me-2 text-primary"></i> Ethereum</p>
-                                            <h6>4.5701 ETH = <span class="text-muted font-size-14 fw-normal">$ 1123.64</span></h6>
-                                        </div>
-                                        <div class="mt-4 pt-2">
-                                            <p class="mb-2"><i class="mdi mdi-circle align-middle font-size-10 me-2 text-info"></i> Litecoin</p>
-                                            <h6>35.3811 LTC = <span class="text-muted font-size-14 fw-normal">$ 2263.09</span></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end card -->
+            <div class="container mt-5">
+                <div class="table-responsive">
+                    <table class="table table-bordered currency-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Currency</th>
+                                <th scope="col">Buying</th>
+                                <th scope="col">Sales</th>
+                                <th scope="col">Change</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>USD / TRY</td>
+                                <td>30.12</td>
+                                <td>30.25</td>
+                                <td class="text-success">+0.15%</td>
+                            </tr>
+                            <tr>
+                                <td>EUR / TRY</td>
+                                <td>32.85</td>
+                                <td>33.00</td>
+                                <td class="text-danger">-0.10%</td>
+                            </tr>
+                            <tr>
+                                <td>GBP / TRY</td>
+                                <td>38.90</td>
+                                <td>39.10</td>
+                                <td class="text-success">+0.20%</td>
+                            </tr>
+                            <tr>
+                                <td>BTC / USD</td>
+                                <td>51,250</td>
+                                <td>51,500</td>
+                                <td class="text-success">+1.35%</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <!-- end col -->
-            </div> <!-- end row-->
-
+            </div>
+            
+           
 
 
             </div> <!-- end row-->
@@ -183,11 +202,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-6">
-                    <script>document.write(new Date().getFullYear())</script> © Minia.
+                    <script>document.write(new Date().getFullYear())</script> © MartX.
                 </div>
                 <div class="col-sm-6">
                     <div class="text-sm-end d-none d-sm-block">
-                        Design & Develop by <a href="#!" class="text-decoration-underline">Themesbrand</a>
+                        Design & Develop by <a href="#!" class="text-decoration-underline">Efsane</a>
                     </div>
                 </div>
             </div>
